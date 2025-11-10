@@ -1,4 +1,5 @@
 window.onload = function() {
+	this.alert($(window).width());
   	$("#loader").css("display", "none");
     resize_page();
     slider();
