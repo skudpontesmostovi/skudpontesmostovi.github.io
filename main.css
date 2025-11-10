@@ -1,0 +1,200 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #001f3e;
+    font-size: 10px;
+    user-select: none;
+}
+
+img#landing {
+    position: fixed;
+    top: 0;
+    user-select: none;
+    margin: 0;
+    /*filter: grayscale(20%) ;*/
+}
+
+main {
+    z-index: 2;
+    position: relative;
+    background-color: white;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    max-width: 1000px;
+}
+
+.container {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav {
+    width: 100%;
+    height: min(15vw, 2.5cm);
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 3;
+    opacity: 0;
+    background-color: transparent;
+}
+
+nav > * {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav > a {
+    color: white;
+    font-family: "Michroma", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+img#logo {
+    height: 60%;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+    filter: drop-shadow(0 0 5px white);
+}
+
+h3, h1, h5 {
+    font-family: "Michroma", sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h5 {
+    font-size: 2rem;
+    margin-bottom: 10vh;
+}
+
+.text {
+    font-size: 2rem;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.sensational {
+    font-size: 2rem;
+    font-family: "Cinzel", serif;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 10vh;
+}
+
+.image-frame {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+
+#learn-more {
+    font-size: 3rem;
+    font-family: "Michroma", sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 10vh;
+    
+}
+
+#learn-more:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+    height: min(15vw, 2.5cm);
+}
+
+footer > * {
+    display: inline;
+    margin-left: 15px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer > a {
+    color: white;
+    font-family: "Michroma", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer > a:hover {
+    text-decoration: underline;
+}
+
+
+.image-frame {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    user-select: none;
+  }
+
+  /* pista con le immagini affiancate */
+  .image-frame .track {
+    display: flex;
+    transition: transform 1s ease;
+    will-change: transform;
+  }
+
+  .image-frame .track img {
+    display: block;
+    width: 100%;
+    flex: 0 0 100%; /* ogni immagine occupa il 100% del frame */
+    height: auto;
+  }
+
+  /* pulsanti freccia */
+  .image-frame .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 10;
+  }
+  .image-frame .prev { left: 10px; }
+  .image-frame .next { right: 10px; }
+
+  /* accessibilità visiva minima al focus */
+  .image-frame .nav:focus {
+    outline: 2px solid rgba(255,255,255,0.8);
+  }
