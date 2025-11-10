@@ -46,6 +46,13 @@ function resize_page() {
         $("#landing").css("transform", "translateX(-50%)");
     }
     $("main").css("margin-top", `${$("#landing").height()}px`);
+	if ($(window).width() <= 800) {
+		$("html").css("font-size", "8px");
+		$("body").css("font-size", "8px");
+	} else {
+		$("html").css("font-size", "10px");
+		$("body").css("font-size", "10px");
+	}
 }
 
 function sleep(ms) {

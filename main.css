@@ -1,9 +1,9 @@
 html, body {
-        margin: 0;
-        padding: 0;
-        background-color: #001f3e;
-        font-size: 10px;
-        user-select: none;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3e;
+    font-size: 10px;
+    user-select: none;
 }
 
 #loader {
@@ -34,7 +34,7 @@ main {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 1000px;
+    max-width: 700px;
 }
 
 nav {
