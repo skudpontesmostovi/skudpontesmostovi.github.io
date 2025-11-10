@@ -6,6 +6,10 @@ html, body {
     user-select: none;
 }
 
+#last {
+    color: white
+}
+
 #loader {
     width: 100%;
     height: 100%;

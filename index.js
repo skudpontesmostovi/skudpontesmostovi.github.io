@@ -1,6 +1,5 @@
 window.onload = function() {
-	this.alert($(window).width());
-  	$("#loader").css("display", "none");
+	$("#loader").css("display", "none");
     resize_page();
     slider();
     /* data-aos="fade-in"
@@ -39,13 +38,8 @@ window.onscroll = function() {
 }
 
 function resize_page() {
-    if ($(window).width() <= 500 && false) {
-        $("#landing").css("height", "50vh");
-        $("#landing").css("width", "");
-        $("#landing").css("position", "relative");
-        $("#landing").css("left", "50%");
-        $("#landing").css("transform", "translateX(-50%)");
-    }
+	$("#last").text(`Version: ... ${$(window).width()} x ${$(window).height()}`)
+
     $("main").css("margin-top", `${$("#landing").height()}px`);
 	if ($(window).width() <= 800) {
 		$("html").css("font-size", "8px");
