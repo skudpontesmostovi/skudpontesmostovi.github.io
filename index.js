@@ -1,4 +1,5 @@
 window.onload = function() {
+  	$("#loader").css("display", "none");
     resize_page();
     slider();
     /* data-aos="fade-in"
@@ -19,6 +20,8 @@ window.onscroll = function() {
     if ($(window).scrollTop() < landingheight - navheight) {
         $("#landing").css("opacity", 1 - $(window).scrollTop() / (landingheight - navheight));
         $("nav").css("background-color", "transparent");
+
+		$("#landing").css("top", `-${$(window).scrollTop()/2}px`)
     } else {
         $("nav").css("background-color", "#001f3e");
     }
@@ -43,6 +46,10 @@ function resize_page() {
         $("#landing").css("transform", "translateX(-50%)");
     }
     $("main").css("margin-top", `${$("#landing").height()}px`);
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function slider() {
