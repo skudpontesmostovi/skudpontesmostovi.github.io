@@ -2,10 +2,6 @@ window.onload = function() {
 	$("#loader").css("display", "none");
     resize_page();
     slider();
-    /* data-aos="fade-in"
-    AOS.init({
-    easing: 'ease-in-quad',
-    });*/
     
 }
 
@@ -26,10 +22,6 @@ window.onscroll = function() {
         $("nav").css("background-color", "#001f3e");
     }
 
-    /*if ($(window).scrollTop() > (landingheight - navheight) * 0.75) {
-        $("nav").css("opacity", `${4*$(window).scrollTop() / (3*(landingheight - navheight))}`);
-    }*/
-
     if ($(window).scrollTop() > (landingheight - navheight)) {
         $("nav").css("opacity", "1");
     } else {
@@ -38,20 +30,14 @@ window.onscroll = function() {
 }
 
 function resize_page() {
-	$("#last").text(`Version: ... ${$(window).width()} x ${$(window).height()}`)
+	//$("#last").text(`Version: ... ${$(window).width()} x ${$(window).height()}`)
+	
+	//alert($(window).width())
+	
 
+	//alert(`${$("#landing").height()}px`)
     $("main").css("margin-top", `${$("#landing").height()}px`);
-	if ($(window).width() <= 800) {
-		$("html").css("font-size", "8px");
-		$("body").css("font-size", "8px");
-	} else {
-		$("html").css("font-size", "10px");
-		$("body").css("font-size", "10px");
-	}
-}
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+	
 }
 
 function slider() {
