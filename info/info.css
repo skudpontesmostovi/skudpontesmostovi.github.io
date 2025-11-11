@@ -110,6 +110,20 @@ h3, h1, h5 {
     margin-bottom: min(10vh, 10vw);
 }
 
+iframe {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70vw;
+    height: 70vw;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#gruppi {
+    margin-top: min(15vw, 2.5cm);
+}
+
 footer {
     background-color: rgb(65, 65, 65);
     width: 100%;
