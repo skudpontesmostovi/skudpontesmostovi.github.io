@@ -35,7 +35,7 @@ function resize_page() {
 	}*/
 
 	//alert(`${$("#landing").height()}px`)
-    $("main").css("margin-top", `${$("#landing").height()}px`);
+    $("main").css("margin-top", `${$("#landing-container").height()}px`);
 	
 }
 
