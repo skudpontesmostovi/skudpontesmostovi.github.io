@@ -21,19 +21,18 @@ window.onscroll = function() {
     } else {
         $("nav").css("background-color", "#001f3e");
     }
-
-    if ($(window).scrollTop() > (landingheight - navheight)) {
-        $("nav").css("opacity", "1");
-    } else {
-        $("nav").css("opacity", "0");
-    }
 }
 
 function resize_page() {
 	//$("#last").text(`Version: ... ${$(window).width()} x ${$(window).height()}`)
 	
 	//alert($(window).width())
-	
+	/*if ($(window).width() > 900) {
+		let imgheight = $("#landing-container").width()
+		$("#landing-container").css("height", `${$("#landing-container").width() * 0.4}px`)
+	} else {
+		$("#landing-container").css("height", "")
+	}*/
 
 	//alert(`${$("#landing").height()}px`)
     $("main").css("margin-top", `${$("#landing").height()}px`);
