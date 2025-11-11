@@ -6,11 +6,6 @@ html, body {
     user-select: none;
 }
 
-.none {
-    margin-bottom: 15px;
-    display: none;
-}
-
 #loader {
     width: 100%;
     height: 100%;
@@ -18,34 +13,19 @@ html, body {
     z-index: 10;
 }
 
-#landing-container {
-    position: fixed;
-    width: 100%;
-    max-height: max(540px, 50vh);
-    top: 0; 
-    left: 0;
-    overflow: hidden;
-    align-items: middle;
-    display: flex;
-}
-
-img#landing {
-    z-index: -1;
-    display: block;
-    position: relative;
-    width: 100%;
-    user-select: none;
-    object-fit: cover;
-    margin: 0;
-}
-
 main {
     z-index: 2;
     position: relative;
     background-color: white;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: max(15vh, 15vw);
+    padding-bottom: 10vh;
     box-shadow: 0 3px 5px grey inset;
+}
+
+h3, h1, h5 {
+    font-family: "Michroma", sans-serif;
+    font-weight: bold;
+    margin: 0;
 }
 
 .container {
@@ -64,7 +44,7 @@ nav {
     overflow: hidden;
     z-index: 3;
     opacity: 1;
-    background-color: transparent;
+    background-color: #001f3e;
     padding-left: auto;
     padding-right: auto;
     text-align: center;
@@ -123,35 +103,6 @@ h3, h1, h5 {
     margin-bottom: min(10vh, 10vw);
 }
 
-.image-frame {
-    width: 100%;
-    height: 66vw;
-    max-height: 600px;
-    overflow: hidden;
-    margin-top: 0;
-    margin-bottom: 5vh;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 2000px;
-}
-
-#learn-more {
-    font-size: 3rem;
-    font-family: "Michroma", sans-serif;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    margin-top: 5vh;
-    
-}
-
-#learn-more:hover {
-    text-decoration: underline;
-}
-
 footer {
     background-color: rgb(65, 65, 65);
     width: 100%;
@@ -163,27 +114,6 @@ footer {
     padding-bottom: 15px;
 }
 
-footer > div {
-    display: block;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-footer a {
-    margin-left: 15px;
-    color: white;
-    font-family: "Michroma", sans-serif;
-    font-weight: bold;
-    display: inline;
-    text-decoration: none;
-    font-size: 2rem;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
 footer > p {
     color: white;
     font-family: "Michroma", sans-serif;
@@ -192,55 +122,6 @@ footer > p {
     font-size: 1.5rem;
     text-align: center;
     margin: 0;
-}
-
-.image-frame {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-
-.image-frame .track {
-    display: flex;
-    position: relative;
-    transition: transform 1s ease;
-    will-change: transform;
-    height: 100%;
-}
-
-.image-frame .track img {
-    display: block;
-    width: 100%;
-    flex: 0 0 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: cover;
-}
-
-.image-frame .nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: none;
-    background: transparent;
-    color: #fff;
-    font-size: 24px;
-    line-height: 1;
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 4px;
-    z-index: 10;
-}
-
-.nav:hover {
-    border: none;
-}
-
-.image-frame .prev { left: 10px; }
-.image-frame .next { right: 10px; }
-
-.image-frame .nav:focus {
-    outline: 2px solid rgba(255,255,255,0.8);
 }
 
 @media only screen and (min-width: 900px){
@@ -325,7 +206,7 @@ footer > p {
         font-size: 7px;
     }
 
-    h1 {font-size: 5rem;}
+    h1 {font-size: 4.5rem;}
     h3 {
         margin-top: min(5vh, 5vw);
         font-size: 3rem;
@@ -361,7 +242,7 @@ footer > p {
         font-size: 5.5px;
     }
 
-    h1 {font-size: 5rem;}
+    h1 {font-size: 4.5rem;}
     h3 {
         margin-top: min(5vh, 5vw);
         font-size: 3rem;
@@ -397,7 +278,7 @@ footer > p {
         font-size: 4px;
     }
 
-    h1 {font-size: 5rem; }
+    h1 {font-size: 4.5rem; }
 
     h3 {
         margin-top: min(5vh, 5vw);
@@ -437,7 +318,7 @@ footer > p {
         font-size: 3px;
     }
 
-    h1 {font-size: 5rem;}
+    h1 {font-size: 4.5rem;}
     h3 {font-size: 3rem;}
     h5 {font-size: 2.25rem;}
 
