@@ -17,7 +17,7 @@ main {
     z-index: 2;
     position: relative;
     background-color: white;
-    padding-top: max(15vh, 15vw);
+    padding-top: 4cm;
     padding-bottom: 10vh;
     box-shadow: 0 3px 5px grey inset;
 }
@@ -26,6 +26,13 @@ h3, h1, h5 {
     font-family: "Michroma", sans-serif;
     font-weight: bold;
     margin: 0;
+    padding: 0 5% 1cm 5%;
+}
+
+.title {
+    font-family: "Michroma", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .container {

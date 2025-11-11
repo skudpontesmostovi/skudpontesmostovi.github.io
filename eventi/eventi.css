@@ -17,7 +17,7 @@ main {
     z-index: 2;
     position: relative;
     background-color: white;
-    padding-top: max(15vh, 15vw);
+    padding-top: 4cm;
     padding-bottom: 10vh;
     box-shadow: 0 3px 5px grey inset;
 }
@@ -25,7 +25,9 @@ main {
 h3, h1, h5 {
     font-family: "Michroma", sans-serif;
     font-weight: bold;
-    margin: 0;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 1cm;
 }
 
 .container {
@@ -48,8 +50,6 @@ nav {
     padding-left: auto;
     padding-right: auto;
     text-align: center;
-
-    /*transition: opacity 0.5s;*/
 }
 
 nav > * {
@@ -95,12 +95,26 @@ h3, h1, h5 {
     margin-bottom: min(5vh, 5vw);
 }
 
+#info-link, #info-link:visited, #info-link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 .sensational {
     font-size: 2rem;
     font-family: "Cinzel", serif;
     text-align: center;
     font-style: italic;
     margin-bottom: min(10vh, 10vw);
+}
+
+img.plakat {
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5vh 0 5vh 0;
 }
 
 footer {
