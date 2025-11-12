@@ -57,33 +57,36 @@ window.onload = function() {
     });
 }
 
-function nextImage(){
-    img = $("#image-frame img");
-    src = img.attr("src");
-    size = totalPhotos["#sorrento"];
+function getAlbum() {
+    src = $("#image-frame img").attr("src");
+    end = src.lastIndexOf("/");
+    src = src.substring(0,end);
+    start = src.lastIndexOf("/");
+    return src.substring(start+1);
+}
 
+function getIndex() {
+    src = $("#image-frame img").attr("src");
     lastSlash = src.lastIndexOf("/");
     lastDot = src.lastIndexOf(".");
     indexStr = src.substring(lastSlash + 1, lastDot);
-    index = parseInt(indexStr, 10);
-    index = index == size ? 1 : index + 1;
+    return parseInt(indexStr, 10);
+}
 
-    newPath = "../images/" + "#sorrento".substring(1) + "/" + index + ".jpg";
+function nextImage(){
+    album = getAlbum();
+    size = totalPhotos["#"+album];
+    index = getIndex();
+    index = index == size ? 1 : index + 1;
+    newPath = "../images/" + album + "/" + index + ".jpg";
     $("#image-frame img").attr("src", newPath);
 }
 
 function prevImage(){
-    let img = $("#image-frame img");
-    let src = img.attr("src");
-    let size = totalPhotos["#sorrento"];
-
-    let lastSlash = src.lastIndexOf("/");
-    let lastDot = src.lastIndexOf(".");
-    let indexStr = src.substring(lastSlash + 1, lastDot);
-    let index = parseInt(indexStr, 10);
+    album = getAlbum();
+    size = totalPhotos["#"+album];
+    index = getIndex();
     index = index == 1 ? size : index - 1;
-
-    let newPath = "../images/" + "#sorrento".substring(1) + "/" + index + ".jpg";
+    newPath = "../images/" + album + "/" + index + ".jpg";
     $("#image-frame img").attr("src", newPath);
-
 }
