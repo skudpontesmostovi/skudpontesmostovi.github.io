@@ -19,6 +19,7 @@ main {
     background-color: white;
     padding-top: 4cm;
     padding-bottom: 10vh;
+    min-height: 100vh;
     box-shadow: 0 3px 5px grey inset;
 }
 
@@ -161,7 +162,6 @@ img#image {
     transform: translate(-50%, -50%);
 }
 
-
 h3, h1, h5 {
     font-family: "Michroma", sans-serif;
     font-weight: bold;
@@ -172,6 +172,8 @@ h3, h1, h5 {
     font-family: "Michroma", sans-serif;
     font-size: 3rem;
     font-weight: bold;
+    margin: 0;
+    margin-top: 1cm;
 }
 
 .text {
@@ -197,7 +199,8 @@ h3, h1, h5 {
     display: none;
     box-sizing: border-box;
 
-    margin: 0.5cm 0 2cm 0;
+    margin: 0.25cm 0 0.5cm 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -212,10 +215,15 @@ h3, h1, h5 {
     -webkit-overflow-scrolling: touch;
 }
 
+.hidden {
+    display: none;
+}
+
 .gallery-flex > div {
     flex: 0 0 auto;
     height: 100%;
     width: auto;
+    margin: 0;
 }
 
 .gallery-flex img {
@@ -225,6 +233,14 @@ h3, h1, h5 {
     height: auto;
     object-fit: contain;
     border-radius: 6px;
+}
+
+.load-more {
+    text-decoration: none;
+}
+
+.load-more:hover {
+    text-decoration: underline;
 }
 
 footer {

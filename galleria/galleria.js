@@ -28,46 +28,40 @@ window.onload = function() {
     $("#prev").on("click", prevImage);
     $("#next").on("click", nextImage);
 
-    for (let album of albums){
-        let albumTag = "#" + album;
-        let imageFrame = this.document.getElementById(album);
+    $("#load-more-trips").on("click", function(){
+        loadAlbum("budapest");
+        loadAlbum("leobersdorf");
+        $("#load-more-trips").css("display","none");
+    });
 
-        for (let index = 1; index <= totalPhotos[album]; index++){
-            div = this.document.createElement("div");
-            img = this.document.createElement("img");
-            img.alt = "";
-            src = "../images/" + album + "/" + index + ".jpg";
-            img.src = src;
-            div.appendChild(img);
-            imageFrame.appendChild(div);
-        }
+    loadAlbum("trebinje");
+    loadAlbum("sorrento");
 
-        $(albumTag).children().each((index, element) => {
-            $(element).on("click", function(){
-                $("#image-displayer").css("display", "block");
-                img = $(element).children().attr("src");
-                $("#image-frame").children().attr("src", img);        
-            });
-        });
+}
+
+function loadAlbum(album) {
+    albumTag = "#" + album;
+    imageFrame = this.document.getElementById(album);
+    $("#container-"+album).removeClass("hidden");
+    $("#container-"+album).css("display","");
+
+    for (let index = 1; index <= totalPhotos[album]; index++){
+        div = this.document.createElement("div");
+        img = this.document.createElement("img");
+        img.alt = "";
+        src = "../images/" + album + "/" + index + ".jpg";
+        img.src = src;
+        div.appendChild(img);
+        imageFrame.appendChild(div);
     }
 
-
-    /*for (let album of albums) {
-        $(album).children().each( (index, element) => {
-            $(element).on("click", function(){
-                $("#image-displayer").css("display", "block");
-                let img = $(element).children().attr("src");
-                $("#image-frame").children().attr("src", img);        
-            });
+    $(albumTag).children().each((index, element) => {
+        $(element).on("click", function(){
+            $("#image-displayer").css("display", "block");
+            img = $(element).children().attr("src");
+            $("#image-frame").children().attr("src", img);        
         });
-    }
-        
-        div.addEventListener("click",function(){
-            $("#image-displayer").css("display","block");
-            $("#image-frame").children().attr("src",src);
-        });
-    
-    */
+    });
 }
 
 function getAlbum() {
@@ -88,7 +82,7 @@ function getIndex() {
 
 function nextImage(){
     album = getAlbum();
-    size = totalPhotos["#"+album];
+    size = totalPhotos[album];
     index = getIndex();
     index = index == size ? 1 : index + 1;
     newPath = "../images/" + album + "/" + index + ".jpg";
@@ -97,7 +91,7 @@ function nextImage(){
 
 function prevImage(){
     album = getAlbum();
-    size = totalPhotos["#"+album];
+    size = totalPhotos[album];
     index = getIndex();
     index = index == 1 ? size : index - 1;
     newPath = "../images/" + album + "/" + index + ".jpg";
