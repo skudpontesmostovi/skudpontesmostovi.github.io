@@ -1,29 +1,20 @@
-let totalPhotos = {"#sorrento":11, "#trebinje":9, "#budapest":11, "#leobersdorf":10};
+let totalPhotos = {"sorrento":11, "trebinje":9, "budapest":11, "leobersdorf":10};
+let albums = ["sorrento", "trebinje", "budapest", "leobersdorf"];
+let blockImageClick = false;
 
 window.onload = function() {
 
-    let albums = ["#sorrento", "#trebinje", "#budapest", "#leobersdorf"];
-    
-    for (let album of albums) {
-        $(album).children().each( (index, element) => {
-            $(element).on("click", function(){
-                $("#image-displayer").css("display", "block");
-                let img = $(element).children().attr("src");
-                $("#image-frame").children().attr("src", img);        
-            });
-        });
-    }
-    
-    let blockImageClick = false;
-
+    // preventing image-display collapse when navigating
     $(".nav").on("click", function(){
         blockImageClick = true;
     });
 
+    // preventing image-display collapse when clicking on image
     $("#image-frame img").on("click", function(){
         blockImageClick = true;
     })
 
+    // collapsing if clicking outside of the image
     $("#image-displayer").on("click", function(event){
         if (blockImageClick) {
             event.stopImmediatePropagation();
@@ -33,28 +24,50 @@ window.onload = function() {
         blockImageClick = false;
     });
 
-    for (let album of albums){
-        $(document).on("click", "#prev", function(){
-            prevImage(album);
-        });
-        $(document).on("click", "#next", function(){
-            nextImage(album);
-        });
-    }
-
+    // setting up navigation
     $("#prev").on("click", prevImage);
     $("#next").on("click", nextImage);
 
-    $("#image-frame").on("scroll", function(event){
-        horizontal = event.currentTarget.scrollLeft;
-        alert(horizontal)
+    for (let album of albums){
+        let albumTag = "#" + album;
+        let imageFrame = this.document.getElementById(album);
 
-        if (horizontal > 10) {
-            nextImage();
-        } else if (horizontal < 10){
-            prevImage();
+        for (let index = 1; index <= totalPhotos[album]; index++){
+            div = this.document.createElement("div");
+            img = this.document.createElement("img");
+            img.alt = "";
+            src = "../images/" + album + "/" + index + ".jpg";
+            img.src = src;
+            div.appendChild(img);
+            imageFrame.appendChild(div);
         }
-    });
+
+        $(albumTag).children().each((index, element) => {
+            $(element).on("click", function(){
+                $("#image-displayer").css("display", "block");
+                img = $(element).children().attr("src");
+                $("#image-frame").children().attr("src", img);        
+            });
+        });
+    }
+
+
+    /*for (let album of albums) {
+        $(album).children().each( (index, element) => {
+            $(element).on("click", function(){
+                $("#image-displayer").css("display", "block");
+                let img = $(element).children().attr("src");
+                $("#image-frame").children().attr("src", img);        
+            });
+        });
+    }
+        
+        div.addEventListener("click",function(){
+            $("#image-displayer").css("display","block");
+            $("#image-frame").children().attr("src",src);
+        });
+    
+    */
 }
 
 function getAlbum() {
