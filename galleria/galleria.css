@@ -94,8 +94,8 @@ div#image-frame {
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80vh;
+    width: 90%;
+    height: 90vh;
 }
 
 .nav {
