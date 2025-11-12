@@ -45,7 +45,7 @@ h3, h1, h5 {
 
 nav {
     width: 100%;
-    height: min(15vw, 2.5cm);
+    height: min(15vw, 2.5cm, 25vh);
     position: fixed;
     top: 0;
     overflow: hidden;
@@ -120,8 +120,11 @@ iframe {
     max-height: 500px;
 }
 
-#gruppi {
-    margin-top: min(15vw, 2.5cm);
+.anchor {
+    display: block;
+    position: relative;
+    height: min(15vw, 2.5cm, 25vh);
+    visibility: hidden;
 }
 
 footer {

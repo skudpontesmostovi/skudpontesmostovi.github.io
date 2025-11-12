@@ -40,7 +40,7 @@ h3, h1, h5 {
 
 nav {
     width: 100%;
-    height: min(15vw, 2.5cm);
+    height: min(15vw, 2.5cm, 25vh);
     position: fixed;
     top: 0;
     overflow: hidden;
