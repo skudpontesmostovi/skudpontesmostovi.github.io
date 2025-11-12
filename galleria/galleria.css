@@ -17,7 +17,7 @@ main {
     z-index: 2;
     position: relative;
     background-color: white;
-    padding-top: 4cm;
+    padding-top: min(20vw, 3cm, 30vh);
     padding-bottom: 10vh;
     min-height: 100vh;
     box-shadow: 0 3px 5px grey inset;
@@ -177,14 +177,15 @@ h3, h1, h5 {
     font-size: 3rem;
     font-weight: bold;
     margin: 0;
-    margin-top: 1cm;
+    margin-top: min(1cm, 20px);
+    padding: 0 5% 0 5%;
 }
 
 .text {
     font-size: 3rem;
     font-family: "Cinzel", serif;
     text-align: center;
-    text-justify:newspaper;
+    text-justify: center;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -248,7 +249,7 @@ h3, h1, h5 {
 
 .load-more, .load-less {
     text-decoration: none;
-    margin-bottom: 2cm;
+    margin-bottom: min(1cm, 20px);
 }
 
 .load-more:hover, .load-less:hover {
@@ -336,7 +337,6 @@ footer > p {
 
     .text {
         font-size: 3.5rem;
-        text-align: justify;
     }
 
     nav > a {
@@ -371,7 +371,6 @@ footer > p {
 
     .text {
         font-size: 3.5rem;
-        text-align: center;
     }
 
     nav > a {
@@ -407,7 +406,6 @@ footer > p {
 
     .text {
         font-size: 3.5rem;
-        text-align: center;
     }
 
 
@@ -437,8 +435,7 @@ footer > p {
         margin-bottom: 5vh;
     }
 
-    .text {
-        text-align: center;
+    .text, .text a {
         font-size: 3.5rem;}
 
     .sensational {
@@ -470,7 +467,7 @@ footer > p {
     h5 {font-size: 2.25rem;}
 
     .container {width: 90%;}
-    .text {
+    .text, .text a {
         font-size: 3.5rem;
     }
 
