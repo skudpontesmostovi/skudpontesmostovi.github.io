@@ -118,12 +118,38 @@ div#next {
     right: 0;
 }
 
+#image-frame .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.nav:hover {
+    border: none;
+}
+
+#image-frame .prev { left: 10px; }
+#image-frame .next { right: 10px; }
+
+#image-frame .nav:focus {
+    outline: 2px solid rgba(255,255,255,0.8);
+}
+
 div#quit {
     color: white;
-    top: 5%;
-    right: 5%;
+    top: min(5%, 20px);
+    right: min(5%, 20px);
     position: absolute;
-    font-size: 3rem;
+    font-size: 30px;
 }
 
 img#image {
