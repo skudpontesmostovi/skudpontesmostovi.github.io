@@ -181,13 +181,20 @@ h3, h1, h5 {
 }
 
 .text {
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Cinzel", serif;
     text-align: center;
-    text-align: justify;
     text-justify:newspaper;
-    margin-top: min(10vh, 10vw);
-    margin-bottom: min(5vh, 5vw);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text a {
+    color: black;
+}
+
+.text a:visited {
+    color: black;
 }
 
 .sensational {
@@ -289,11 +296,6 @@ footer > p {
         font-size: 3rem;
         padding-left: 5%;
         padding-right: 5%;
-    }
-
-    .text {
-        font-size: 3.5rem;
-        text-align: justify;
     }
 
     .container {
