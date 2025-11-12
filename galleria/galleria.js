@@ -1,5 +1,5 @@
-let totalPhotos = {"sorrento":11, "trebinje":9, "budapest":11, "leobersdorf":10};
-let albums = ["sorrento", "trebinje", "budapest", "leobersdorf"];
+let totalPhotos = {"sorrento":11, "trebinje":9, "budapest":11, "leobersdorf":10, "smotra2025":8, "smotra2019":9, "etnovecera":6};
+let albums = ["sorrento", "trebinje", "budapest", "leobersdorf", "smotra2025", "smotra2019", "etnovecera"];
 let blockImageClick = false;
 
 window.onload = function() {
@@ -32,10 +32,33 @@ window.onload = function() {
         loadAlbum("budapest");
         loadAlbum("leobersdorf");
         $("#load-more-trips").css("display","none");
+        $("#load-less-trips").css("display","");
     });
+
+    $("#load-less-trips").on("click", function(){
+        unloadAlbum("budapest");
+        unloadAlbum("leobersdorf");
+        $("#load-more-trips").css("display","");
+        $("#load-less-trips").css("display","none");
+    });
+
+    $("#load-more-events").on("click", function(){
+        loadAlbum("etnovecera");
+        $("#load-more-events").css("display","none");
+        $("#load-less-events").css("display","");
+    });
+
+    $("#load-less-events").on("click", function(){
+        unloadAlbum("etnovecera");
+        $("#load-more-events").css("display","");
+        $("#load-less-events").css("display","none");
+    })
 
     loadAlbum("trebinje");
     loadAlbum("sorrento");
+    
+    loadAlbum("smotra2025");
+    loadAlbum("smotra2019");
 
 }
 
@@ -62,6 +85,13 @@ function loadAlbum(album) {
             $("#image-frame").children().attr("src", img);        
         });
     });
+}
+
+function unloadAlbum(album){
+    for (let child of $("#"+album).children()){
+        $(child).remove();
+    }
+    $("#container-"+album).css("display","none");
 }
 
 function getAlbum() {

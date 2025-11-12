@@ -84,7 +84,7 @@ img#logo {
 div#image-displayer {
     width: 100%;
     height: 100%;
-    background-color: rgba(100, 100, 100, 0.45);
+    background-color: rgba(100, 100, 100, 0.55);
     position: fixed;
     z-index: 20;
     display: none;
@@ -97,6 +97,10 @@ div#image-frame {
     transform: translate(-50%, -50%);
     width: 90%;
     height: 90vh;
+}
+
+div#image-frame img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .nav {
@@ -235,11 +239,12 @@ h3, h1, h5 {
     border-radius: 6px;
 }
 
-.load-more {
+.load-more, .load-less {
     text-decoration: none;
+    margin-bottom: 2cm;
 }
 
-.load-more:hover {
+.load-more:hover, .load-less:hover {
     text-decoration: underline;
 }
 
