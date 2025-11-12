@@ -79,6 +79,63 @@ img#logo {
     user-select: none;
 }
 
+
+div#image-displayer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.45);
+    position: fixed;
+    z-index: 20;
+    display: none;
+}
+
+div#image-frame {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80vh;
+}
+
+.nav {
+    color: white;
+    width: fit-content;
+    vertical-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 10px;
+
+    font-size: 2rem;
+}
+
+div#prev {
+    left: 0;
+}
+
+div#next {
+    right: 0;
+}
+
+div#quit {
+    color: white;
+    top: 5%;
+    right: 5%;
+    position: absolute;
+    font-size: 3rem;
+}
+
+img#image {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 h3, h1, h5 {
     font-family: "Michroma", sans-serif;
     font-weight: bold;
