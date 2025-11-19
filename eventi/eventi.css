@@ -38,6 +38,14 @@ h3, h1, h5 {
     max-width: 700px;
 }
 
+.title {
+    font-family: "Michroma", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    margin-top: min(1cm, 20px);
+}
+
 nav {
     width: 100%;
     height: min(15vw, 2.5cm, 25vh);
@@ -115,6 +123,7 @@ img.plakat {
     left: 50%;
     transform: translateX(-50%);
     margin: 5vh 0 5vh 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 footer {

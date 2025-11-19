@@ -72,7 +72,7 @@ function loadAlbum(album) {
         div = this.document.createElement("div");
         img = this.document.createElement("img");
         img.alt = "";
-        src = "../images/" + album + "/" + index + ".jpg";
+        src = "/images/" + album + "/" + index + ".jpg";
         img.src = src;
         div.appendChild(img);
         imageFrame.appendChild(div);
@@ -115,7 +115,7 @@ function nextImage(){
     size = totalPhotos[album];
     index = getIndex();
     index = index == size ? 1 : index + 1;
-    newPath = "../images/" + album + "/" + index + ".jpg";
+    newPath = "/images/" + album + "/" + index + ".jpg";
     $("#image-frame img").attr("src", newPath);
 }
 
@@ -124,6 +124,6 @@ function prevImage(){
     size = totalPhotos[album];
     index = getIndex();
     index = index == 1 ? size : index - 1;
-    newPath = "../images/" + album + "/" + index + ".jpg";
+    newPath = "/images/" + album + "/" + index + ".jpg";
     $("#image-frame img").attr("src", newPath);
 }

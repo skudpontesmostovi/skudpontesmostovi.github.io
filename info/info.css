@@ -50,7 +50,7 @@ h3, h1, h5 {
 }
 
 .container {
-    width: 80%;
+    width: 75%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -136,7 +136,6 @@ iframe {
 ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 ul li {
@@ -169,6 +168,10 @@ li.location {
 
 ul a, ul a:visited {
     color: black;
+}
+
+ul {
+    margin-left: 5%;
 }
 
 p.title {
@@ -353,14 +356,12 @@ footer > p {
         text-align: center;
     }
 
-    .container {
-        width: 90%;
-    }
-
     ul a, ul a:visited {
         color: black;
         font-size: 3rem;
     }
+
+    
 
     #group-list ul {
         font-size: 2.5rem;
