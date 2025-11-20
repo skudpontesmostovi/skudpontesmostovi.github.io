@@ -96,11 +96,14 @@ h3, h1, h5 {
 .text {
     font-size: 2rem;
     font-family: "Cinzel", serif;
-    text-align: center;
     text-align: justify;
     text-justify:newspaper;
     margin-top: min(10vh, 10vw);
     margin-bottom: min(5vh, 5vw);
+}
+
+ul, li.text {
+    padding-left: 0;
 }
 
 #info-link, #info-link:visited, #info-link:hover {

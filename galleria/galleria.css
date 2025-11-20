@@ -236,6 +236,7 @@ h3, h1, h5 {
     height: 100%;
     width: auto;
     margin: 0;
+    filter: drop-shadow(3px 3px 3px #808080);
 }
 
 .gallery-flex img {
@@ -248,13 +249,13 @@ h3, h1, h5 {
 }
 
 .load-more, .load-less {
-    text-decoration: underline;
+    text-decoration: none;
     margin-bottom: min(1cm, 20px);
 }
 
-/*.load-more:hover, .load-less:hover {
+.load-more:hover, .load-less:hover {
     text-decoration: underline;
-}*/
+}
 
 footer {
     background-color: rgb(65, 65, 65);

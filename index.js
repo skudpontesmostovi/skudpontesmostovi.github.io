@@ -39,6 +39,33 @@ function resize_page() {
 	
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+
+  const elements = document.querySelectorAll(".reveal");
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+
+        const el = entry.target;
+
+        // Se è già stato rivelato, non rifare la transizione
+        if (!el.dataset.revealed) {
+          el.classList.add("visible");
+          el.dataset.revealed = "true";   // salviamo lo stato
+        }
+
+        observer.unobserve(el);  // non osserviamo più l’elemento
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  elements.forEach(el => observer.observe(el));
+
+});
+
 function slider() {
   const frame = document.getElementById('image-frame-1');
   const track = frame.querySelector('.track');

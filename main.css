@@ -194,6 +194,15 @@ footer > p {
     margin: 0;
 }
 
+.reveal {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+}
+
 .image-frame {
     position: relative;
     overflow: hidden;
