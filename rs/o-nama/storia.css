@@ -23,13 +23,13 @@ main {
 }
 
 h3, h1, h5 {
-    font-family: "Michroma", sans-serif;
+    font-family: "Ysabeau Infant", sans-serif;
     font-weight: bold;
     margin: 0;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -95,7 +95,7 @@ nav > * {
 
 nav > a {
     color: white;
-    font-family: "Michroma", sans-serif;
+    font-family: "Ysabeau Infant", sans-serif;
     font-weight: bold;
     text-decoration: none;
     font-size: 2rem;
@@ -116,14 +116,14 @@ img#logo {
 }
 
 h3, h1, h5 {
-    font-family: "Michroma", sans-serif;
+    font-family: "Ysabeau Infant", sans-serif;
     font-weight: bold;
     margin: 0;
 }
 
 .text {
     font-size: 2rem;
-    font-family: "Cinzel", serif;
+    font-family: "Cormorant Garamond", serif;
     text-align: center;
     text-align: justify;
     text-justify:newspaper;
@@ -133,7 +133,7 @@ h3, h1, h5 {
 
 .sensational {
     font-size: 2rem;
-    font-family: "Cinzel", serif;
+    font-family: "Cormorant Garamond", serif;
     text-align: center;
     font-style: italic;
     margin-bottom: min(10vh, 10vw);
@@ -152,7 +152,7 @@ footer {
 
 footer > p {
     color: white;
-    font-family: "Michroma", sans-serif;
+    font-family: "Ysabeau Infant", sans-serif;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.5rem;
@@ -163,27 +163,27 @@ footer > p {
 @media only screen and (min-width: 900px){
 
     h1 {
-        font-size: 6.5rem;
+        font-size: 10rem;
     }
 
     h3 {
         margin-top: min(5vh, 5vw);
-        font-size: 4rem;
+        font-size: 5.5rem;
     }
 
     h5 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         margin-bottom: 5vh;
     }
 
     .sensational {
-        font-size: 3rem;
+        font-size: 5rem;
         padding-left: 5%;
         padding-right: 5%;
     }
 
     .text {
-        font-size: 3.5rem;
+        font-size: 5rem;
         text-align: justify;
     }
 
@@ -192,68 +192,76 @@ footer > p {
     }
 
     nav > a {
-        font-size: 3rem;
+        font-size: 5rem;
         margin: 1.5rem;
     }
 
+    a#learn-more {
+        font-size: 6rem;
+    }
+
     footer a {font-size: 3rem;}
-    footer p {font-size: 1.5rem;}
+    footer p {font-size: 3rem;}
 }
 
 @media only screen and (max-width: 900px){
 
 
     h1 {
-        font-size: 6rem;
+        font-size: 10rem;
     }
 
     h3 {
         margin-top: min(5vh, 5vw);
-        font-size: 4rem;
+        font-size: 5.5rem;
     }
 
     h5 {
-        font-size: 2.5rem;
+        font-size: 4rem;
         margin-bottom: 5vh;
     }
 
     .sensational {
-        font-size: 3rem;
+        font-size: 5rem;
         padding-left: 5%;
         padding-right: 5%;
     }
 
     .text {
-        font-size: 3.5rem;
+        font-size: 5rem;
         text-align: justify;
     }
 
     nav > a {
-        font-size: 3rem;
+        font-size: 5rem;
         margin: 1.5rem;
     }
 
+    a#learn-more {
+        font-size: 5rem;
+    }
+
     footer a {font-size: 3rem;}
-    footer p {font-size: 1.5rem;}
+    footer p {font-size: 3rem;}
 }
 
 @media only screen and (max-width: 800px){
-    html, body {
-        font-size: 7px;
-    }
+  
 
-    h1 {font-size: 4.5rem;}
+    h1 {font-size: 6rem;}
     h3 {
         margin-top: min(5vh, 5vw);
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     h5 {
-        font-size: 2.25rem;
+        font-size: 2.75rem;
         margin-bottom: 5vh;
     }
 
+    .container {width: 90%;}
+
     .sensational {
-        font-size: 3rem;
+        font-size: 3.5rem;
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -268,17 +276,18 @@ footer > p {
         margin: 1.5rem;
     }
 
+    a#learn-more {
+        font-size: 3.5rem;
+    }
+
     footer a {font-size: 3rem;}
-    footer p {font-size: 1.5rem;}
+    footer p {font-size: 2rem;}
 }
 
 @media only screen and (max-width: 600px){
 
-    html, body {
-        font-size: 5.5px;
-    }
 
-    h1 {font-size: 4.5rem;}
+    h1 {font-size: 5rem;}
     h3 {
         margin-top: min(5vh, 5vw);
         font-size: 3rem;
@@ -293,16 +302,17 @@ footer > p {
         padding-left: 5%;
         padding-right: 5%;
     }
+    .container {width: 90%;}
 
     .text {
-        font-size: 3.5rem;
+        font-size: 3rem;
         text-align: center;
     }
 
 
     nav > a {
-        font-size: 3rem;
-        margin: 1.5rem;
+        font-size: 2rem;
+        margin: 1rem;
     }
 
     footer a {font-size: 3rem;}
@@ -310,28 +320,27 @@ footer > p {
 }
 
 @media only screen and (max-width: 400px) {
-    html, body {
-        font-size: 4px;
-    }
-
-    h1 {font-size: 4.5rem; }
+   
+    h1 {font-size: 4rem; }
 
     h3 {
         margin-top: min(5vh, 5vw);
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     h5 {
-        font-size: 2.25rem;
+        font-size: 2rem;
         margin-bottom: 5vh;
     }
 
+    .container {width: 90%;}
+
     .text {
         text-align: center;
-        font-size: 3.5rem;}
+        font-size: 2.5rem;}
 
     .sensational {
-        font-size: 3rem;
+        font-size: 2.25rem;
         line-height: 90%;
         padding-left: 5%;
         padding-right: 5%;
@@ -340,8 +349,8 @@ footer > p {
     a {font-size: 1rem;}
 
     nav > a {
-        font-size: 3rem;
-        margin: 1.5rem;
+        font-size: 1.5rem;
+        margin: 1rem;
     }
 
     footer a {font-size: 3rem;}
@@ -350,30 +359,31 @@ footer > p {
 
 @media only screen and (max-width: 300px){
 
-    html, body {
-        font-size: 3px;
-    }
 
-    h1 {font-size: 4.5rem;}
-    h3 {font-size: 3rem;}
-    h5 {font-size: 2.25rem;}
+    h1 {font-size: 3.5rem;}
+    h3 {font-size: 2rem;}
+    h5 {font-size: 1.75rem;}
 
     .container {width: 90%;}
     .text {
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 
     .sensational {
-        font-size: 3rem;
+        font-size: 2rem;
         padding-left: 2.5%;
         padding-right: 2.5%;
     }
 
     nav > a {
-        font-size: 3rem;
-        margin: 1.5rem;
+        font-size: 1.25rem;
+        margin: 1rem;
     }
 
-    footer a {font-size: 3rem;}
+    a#learn-more {
+        font-size: 2.5rem;
+    }
+
+    footer a {font-size: 1rem;}
     footer p {font-size: 1.5rem;}
 }
