@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерија - СКУД Понтес-Мостови</title>
+    <link rel="icon" type="image/png" href="../images/logo-bianco.png"/>
+    <link rel="stylesheet" href="galleria.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="galleria.js"></script>
+
+    <!--Google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Michroma&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div style="display:none;" id="loader">loading</div>
+
+    <nav id="navigation-bar">
+        <a href="/rs/o-nama">О нама</a>
+        <a href="/rs/dogadjaji/">Догађаји</a>
+        <a href="/rs"><img id="logo" draggable="false" src="/images/logo-bianco.png"></a>
+        <a href="/rs/info">  Инфо  </a>
+        <a href=".">Галерија</a>
+    </nav>
+
+    <div id="image-displayer">
+        <div id="image-frame">
+            <img id="image" src="" alt="">
+            <div class="nav" id="prev">&lsaquo;</div>
+            <div class="nav" id="next">&rsaquo;</div>
+        </div>
+        <div id="quit">&times;</div>
+    </div>
+
+    <main>
+        <h1 align="center" style="margin-bottom:1cm;">Галерија</h1>
+
+        <!---------------------TRIPS------------------------------>
+        <p class="title" style="text-align:center;">ПУТОВАЊА</p>
+        <div id="container-sorrento" class="hidden">
+            <p class="title" align="center">Соренто, Напуљ, Капри - Јун 2025</p>    
+            <div id="sorrento" class="gallery-flex"></div>
+        </div>
+        <div id="container-trebinje" class="hidden">
+            <p class="title" align="center">Требиње - Март 2023</p> 
+            <div id="trebinje" class="gallery-flex"></div>
+        </div>
+        <div id="container-budapest" class="hidden">
+            <p class="title" align="center">Будимпешта - Јун 2024</p>
+            <div id="budapest" class="gallery-flex"></div>
+        </div>
+        <div id="container-leobersdorf" class="hidden">
+            <p class="title" align="center">Леоберсдорф - Децембар 2024</p>
+            <div id="leobersdorf" class="gallery-flex"></div>
+        </div>
+
+        <p id="load-more-trips" class="title load-more" style="text-align:center;margin-top:1cm;">Прикажи више</p>
+        <p id="load-less-trips" class="title load-less" style="text-align:center;margin-top:1cm;display:none;">Прикажи мање</p>
+        
+        <br>
+
+        <!---------------------EVENTS-------------------------->
+        <p class="title" style="text-align:center;margin-top:1cm;">ОСТАЛИ ДОГАЂАЈИ</p>
+        <div id="container-smotra2025" class="hidden">
+            <p class="title" align="center">Смотра Српског Фолклора у Италији - Трст, 2025</p>    
+            <div id="smotra2025" class="gallery-flex"></div>
+        </div>
+        <div id="container-smotra2019" class="hidden">
+            <p class="title" align="center">Европска Смотра Српског Фолклора Дијаспоре - Београд, 2019</p> 
+            <div id="smotra2019" class="gallery-flex"></div>
+        </div>
+        <div id="container-etnovecera" class="hidden">
+            <p class="title" align="center">Етно Вечера - Фебруар 2024</p>
+            <div id="etnovecera" class="gallery-flex"></div>
+        </div>
+
+        <p id="load-more-events" class="title load-more" style="text-align:center;margin-top:1cm;">Прикажи више</p>
+        <p id="load-less-events" class="title load-less" style="text-align:center;margin-top:1cm;display:none;">Прикажи мање</p>
+        
+        <div class="container">
+            <p class="text">Све слике припадају Друштву.</p>
+            <br>
+            <p class="text">Све особе приказане на сликама су чланови Друштва који су дали писмено одобрење за коришћење њихових слика за промоцију Друштва.</p>
+            <br>
+            <p class="text">Једно велико хвала иде <a href="https://www.facebook.com/profile.php?id=100084079420434" target="_blank">Жељку Јовановићу</a>, који зна сваки тренутак усликати на најбољи начин и увек пружа огромну подршку.</p>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; СКУД Понтес-Мостови 2025</p>
+    </footer>
+    
+</body>
+</html>

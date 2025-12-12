@@ -6,6 +6,11 @@ html, body {
     user-select: none;
 }
 
+.none {
+    margin-bottom: 15px;
+    display: none;
+}
+
 #loader {
     width: 100%;
     height: 100%;
@@ -13,44 +18,38 @@ html, body {
     z-index: 10;
 }
 
+#landing-container {
+    position: fixed;
+    width: 100%;
+    max-height: max(540px, 50vh);
+    top: 0; 
+    left: 0;
+    overflow: hidden;
+    align-items: middle;
+    display: flex;
+}
+
+img#landing {
+    z-index: -1;
+    display: block;
+    position: relative;
+    width: 100%;
+    user-select: none;
+    object-fit: cover;
+    margin: 0;
+}
+
 main {
     z-index: 2;
     position: relative;
     background-color: white;
-    padding-top: min(25vw, 4cm, 30vh);
-    padding-bottom: min(10vh, 10vw);
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     box-shadow: 0 3px 5px grey inset;
-    overflow: hidden;
-}
-
-main > img {
-    position: fixed;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%,-50%);
-    width: 80%;
-    max-width: 700px;
-    z-index: -1;
-    opacity: 0.33;
-    filter: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)) drop-shadow(0 6px 20px rgba(0, 0, 0, 0.19));
-}
-
-h3, h1, h5 {
-    font-family: "Michroma", sans-serif;
-    font-weight: bold;
-    margin: 0;
-    padding: 0 5% 0.5cm 5%;
-}
-
-.title {
-    font-family: "Michroma", sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
 }
 
 .container {
-    width: 75%;
+    width: 80%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -65,7 +64,7 @@ nav {
     overflow: hidden;
     z-index: 3;
     opacity: 1;
-    background-color: #001f3e;
+    background-color: transparent;
     padding-left: auto;
     padding-right: auto;
     text-align: center;
@@ -110,7 +109,10 @@ h3, h1, h5 {
     font-size: 2rem;
     font-family: "Cinzel", serif;
     text-align: center;
-    margin: 0;
+    text-align: justify;
+    text-justify:newspaper;
+    margin-top: min(10vh, 10vw);
+    margin-bottom: min(5vh, 5vw);
 }
 
 .sensational {
@@ -121,76 +123,33 @@ h3, h1, h5 {
     margin-bottom: min(10vh, 10vw);
 }
 
-iframe {
+.image-frame {
+    width: 100%;
+    height: 66vw;
+    max-height: 600px;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 5vh;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 70vw;
-    height: 70vw;
-    max-width: 500px;
-    max-height: 500px;
-    margin-top: min(5vh, 5vw);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 2000px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    background-repeat: no-repeat;
-    background-size: 1em 1em;
-    background-position: left center;
-    padding-left: 1.6em;
-    line-height: 1.6;
-}
-
-li.telephone {
-    background-image: url(../images/icons/telephone.svg);
-}
-
-li.email {
-    background-image: url(../images/icons/mail.svg);
-}
-
-li.instagram {
-    background-image: url(../images/icons/instagram.svg);
-}
-
-li.facebook {
-    background-image: url(../images/icons/facebook.svg);
-}
-
-li.location {
-    background-image: url(../images/icons/location.svg);
-}
-
-ul a, ul a:visited {
+#learn-more {
+    font-size: 3rem;
+    font-family: "Michroma", sans-serif;
+    font-weight: bold;
     color: black;
-}
-
-ul {
-    margin-left: 5%;
-}
-
-p.title {
-    margin-bottom: 0;
-}
-
-#group-list {
-    margin: min(5vw, 5vh) 0 min(5vw, 5vh) 0;
-}
-
-#group-list li {
-    margin: 0;
-}
-
-.anchor {
+    text-decoration: none;
     display: block;
-    position: relative;
-    height: min(15vw, 2.5cm, 25vh);
-    visibility: hidden;
+    text-align: center;
+    margin-top: 5vh;
+    
+}
+
+#learn-more:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -204,6 +163,27 @@ footer {
     padding-bottom: 15px;
 }
 
+footer > div {
+    display: block;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer a {
+    margin-left: 15px;
+    color: white;
+    font-family: "Michroma", sans-serif;
+    font-weight: bold;
+    display: inline;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 footer > p {
     color: white;
     font-family: "Michroma", sans-serif;
@@ -212,6 +192,64 @@ footer > p {
     font-size: 1.5rem;
     text-align: center;
     margin: 0;
+}
+
+.reveal {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+}
+
+.image-frame {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.image-frame .track {
+    display: flex;
+    position: relative;
+    transition: transform 1s ease;
+    will-change: transform;
+    height: 100%;
+}
+
+.image-frame .track img {
+    display: block;
+    width: 100%;
+    flex: 0 0 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: cover;
+}
+
+.image-frame .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 24px;
+    line-height: 1;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.nav:hover {
+    border: none;
+}
+
+.image-frame .prev { left: 10px; }
+.image-frame .next { right: 10px; }
+
+.image-frame .nav:focus {
+    outline: 2px solid rgba(255,255,255,0.8);
 }
 
 @media only screen and (min-width: 900px){
@@ -238,6 +276,7 @@ footer > p {
 
     .text {
         font-size: 3.5rem;
+        text-align: justify;
     }
 
     .container {
@@ -278,7 +317,7 @@ footer > p {
 
     .text {
         font-size: 3.5rem;
-        text-align: center;
+        text-align: justify;
     }
 
     nav > a {
@@ -295,7 +334,7 @@ footer > p {
         font-size: 7px;
     }
 
-    h1 {font-size: 4.5rem;}
+    h1 {font-size: 5rem;}
     h3 {
         margin-top: min(5vh, 5vw);
         font-size: 3rem;
@@ -316,10 +355,6 @@ footer > p {
         text-align: center;
     }
 
-    #group-list ul {
-        font-size: 2.5rem;
-    }
-
     nav > a {
         font-size: 3rem;
         margin: 1.5rem;
@@ -335,7 +370,7 @@ footer > p {
         font-size: 5.5px;
     }
 
-    h1 {font-size: 4.5rem;}
+    h1 {font-size: 5rem;}
     h3 {
         margin-top: min(5vh, 5vw);
         font-size: 3rem;
@@ -352,29 +387,10 @@ footer > p {
     }
 
     .text {
-        font-size: 3rem;
+        font-size: 3.5rem;
         text-align: center;
     }
 
-    ul a, ul a:visited {
-        color: black;
-        font-size: 3rem;
-    }
-
-    
-
-    #group-list ul {
-        font-size: 2.5rem;
-    }
-
-    .container {
-        width: 80%;
-    }
-
-    iframe {
-        width: 70vw;
-        height: 70vw;
-    }
 
     nav > a {
         font-size: 3rem;
@@ -390,7 +406,7 @@ footer > p {
         font-size: 4px;
     }
 
-    h1 {font-size: 4.5rem; }
+    h1 {font-size: 5rem; }
 
     h3 {
         margin-top: min(5vh, 5vw);
@@ -404,31 +420,13 @@ footer > p {
 
     .text {
         text-align: center;
-        font-size: 3rem;}
+        font-size: 3.5rem;}
 
     .sensational {
         font-size: 3rem;
         line-height: 90%;
         padding-left: 5%;
         padding-right: 5%;
-    }
-
-    .container {
-        width: 90%;
-    }
-
-    ul a, ul a:visited {
-        color: black;
-        font-size: 3rem;
-    }
-
-    #groups li {
-        font-size: 2.5rem;
-    }
-
-    iframe {
-        width: 80vw;
-        height: 80vw;
     }
 
     a {font-size: 1rem;}
@@ -448,23 +446,13 @@ footer > p {
         font-size: 3px;
     }
 
-    h1 {font-size: 4.5rem;}
+    h1 {font-size: 5rem;}
     h3 {font-size: 3rem;}
     h5 {font-size: 2.25rem;}
 
     .container {width: 90%;}
     .text {
-        font-size: 3rem;
-    }
-
-    ul a, ul a:visited {
-        color: black;
-        font-size: 3rem;
-    }
-
-    iframe {
-        width: 80vw;
-        height: 80vw;
+        font-size: 3.5rem;
     }
 
     .sensational {

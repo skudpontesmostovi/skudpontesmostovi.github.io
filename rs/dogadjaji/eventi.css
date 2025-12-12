@@ -18,43 +18,32 @@ main {
     position: relative;
     background-color: white;
     padding-top: min(25vw, 4cm, 30vh);
-    padding-bottom: min(10vh, 10vw);
+    padding-bottom: min(5vw, 1cm, 5vh);
     box-shadow: 0 3px 5px grey inset;
-    overflow: hidden;
-}
-
-main > img {
-    position: fixed;
-    left: 50%;
-    top: 55%;
-    transform: translate(-50%,-50%);
-    width: 80%;
-    max-width: 700px;
-    z-index: -1;
-    opacity: 0.33;
-    filter: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)) drop-shadow(0 6px 20px rgba(0, 0, 0, 0.19));
 }
 
 h3, h1, h5 {
     font-family: "Michroma", sans-serif;
     font-weight: bold;
-    margin: 0;
-    padding: 0 5% 0.5cm 5%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 0;
+}
+
+.container {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 700px;
 }
 
 .title {
     font-family: "Michroma", sans-serif;
     font-size: 3rem;
     font-weight: bold;
-}
-
-.container {
-    width: 75%;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 700px;
+    margin: 0;
+    margin-top: min(1cm, 20px);
 }
 
 nav {
@@ -69,8 +58,6 @@ nav {
     padding-left: auto;
     padding-right: auto;
     text-align: center;
-
-    /*transition: opacity 0.5s;*/
 }
 
 nav > * {
@@ -109,8 +96,22 @@ h3, h1, h5 {
 .text {
     font-size: 2rem;
     font-family: "Cinzel", serif;
-    text-align: center;
-    margin: 0;
+    text-align: justify;
+    text-justify:newspaper;
+    margin-top: min(10vh, 10vw);
+    margin-bottom: min(5vh, 5vw);
+}
+
+ul, li.text {
+    padding-left: 0;
+}
+
+#info-link, #info-link:visited, #info-link:hover {
+    color: black;
+    text-decoration: underline;
+    font-size: 100%;
+    font-family: "Cinzel", serif;
+    text-align: justify;
 }
 
 .sensational {
@@ -121,76 +122,14 @@ h3, h1, h5 {
     margin-bottom: min(10vh, 10vw);
 }
 
-iframe {
+img.plakat {
+    width: 90%;
+    max-width: 500px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 70vw;
-    height: 70vw;
-    max-width: 500px;
-    max-height: 500px;
-    margin-top: min(5vh, 5vw);
+    margin: 5vh 0 5vh 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    background-repeat: no-repeat;
-    background-size: 1em 1em;
-    background-position: left center;
-    padding-left: 1.6em;
-    line-height: 1.6;
-}
-
-li.telephone {
-    background-image: url(../images/icons/telephone.svg);
-}
-
-li.email {
-    background-image: url(../images/icons/mail.svg);
-}
-
-li.instagram {
-    background-image: url(../images/icons/instagram.svg);
-}
-
-li.facebook {
-    background-image: url(../images/icons/facebook.svg);
-}
-
-li.location {
-    background-image: url(../images/icons/location.svg);
-}
-
-ul a, ul a:visited {
-    color: black;
-}
-
-ul {
-    margin-left: 5%;
-}
-
-p.title {
-    margin-bottom: 0;
-}
-
-#group-list {
-    margin: min(5vw, 5vh) 0 min(5vw, 5vh) 0;
-}
-
-#group-list li {
-    margin: 0;
-}
-
-.anchor {
-    display: block;
-    position: relative;
-    height: min(15vw, 2.5cm, 25vh);
-    visibility: hidden;
 }
 
 footer {
@@ -238,6 +177,7 @@ footer > p {
 
     .text {
         font-size: 3.5rem;
+        text-align: justify;
     }
 
     .container {
@@ -278,7 +218,7 @@ footer > p {
 
     .text {
         font-size: 3.5rem;
-        text-align: center;
+        text-align: justify;
     }
 
     nav > a {
@@ -316,10 +256,6 @@ footer > p {
         text-align: center;
     }
 
-    #group-list ul {
-        font-size: 2.5rem;
-    }
-
     nav > a {
         font-size: 3rem;
         margin: 1.5rem;
@@ -352,29 +288,10 @@ footer > p {
     }
 
     .text {
-        font-size: 3rem;
+        font-size: 3.5rem;
         text-align: center;
     }
 
-    ul a, ul a:visited {
-        color: black;
-        font-size: 3rem;
-    }
-
-    
-
-    #group-list ul {
-        font-size: 2.5rem;
-    }
-
-    .container {
-        width: 80%;
-    }
-
-    iframe {
-        width: 70vw;
-        height: 70vw;
-    }
 
     nav > a {
         font-size: 3rem;
@@ -404,31 +321,13 @@ footer > p {
 
     .text {
         text-align: center;
-        font-size: 3rem;}
+        font-size: 3.5rem;}
 
     .sensational {
         font-size: 3rem;
         line-height: 90%;
         padding-left: 5%;
         padding-right: 5%;
-    }
-
-    .container {
-        width: 90%;
-    }
-
-    ul a, ul a:visited {
-        color: black;
-        font-size: 3rem;
-    }
-
-    #groups li {
-        font-size: 2.5rem;
-    }
-
-    iframe {
-        width: 80vw;
-        height: 80vw;
     }
 
     a {font-size: 1rem;}
@@ -454,17 +353,7 @@ footer > p {
 
     .container {width: 90%;}
     .text {
-        font-size: 3rem;
-    }
-
-    ul a, ul a:visited {
-        color: black;
-        font-size: 3rem;
-    }
-
-    iframe {
-        width: 80vw;
-        height: 80vw;
+        font-size: 3.5rem;
     }
 
     .sensational {
