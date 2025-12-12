@@ -216,38 +216,28 @@ footer > p {
 
 @media only screen and (min-width: 900px){
 
-    h1 {
-        font-size: 6.5rem;
-    }
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
 
-    h3 {
-        margin-top: min(5vh, 5vw);
-        font-size: 4rem;
-    }
-
-    h5 {
-        font-size: 2.5rem;
-        margin-bottom: 5vh;
+    .container {width: 80%;}
+    .text, a#learn-more {
+        font-size: 3.5rem;
     }
 
     .sensational {
         font-size: 3rem;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .text {
-        font-size: 3.5rem;
-    }
-
-    .container {
-        max-width: 800px;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        line-height: normal;
     }
 
     nav > a {
-        font-size: 3rem;
+        font-size: 4rem;
         margin: 1.5rem;
     }
+
+    
 
     footer a {font-size: 3rem;}
     footer p {font-size: 1.5rem;}
@@ -255,36 +245,33 @@ footer > p {
 
 @media only screen and (max-width: 900px){
 
-
-    h1 {
-        font-size: 6rem;
+    html, body {
+        font-size: 8px;
     }
 
-    h3 {
-        margin-top: min(5vh, 5vw);
-        font-size: 4rem;
-    }
 
-    h5 {
-        font-size: 2.5rem;
-        margin-bottom: 5vh;
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
+
+    .container {width: 80%;}
+    .text, a#learn-more {
+        font-size: 3.5rem;
     }
 
     .sensational {
         font-size: 3rem;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .text {
-        font-size: 3.5rem;
-        text-align: center;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        line-height: normal;
     }
 
     nav > a {
-        font-size: 3rem;
+        font-size: 4rem;
         margin: 1.5rem;
     }
+
+    
 
     footer a {font-size: 3rem;}
     footer p {font-size: 1.5rem;}
@@ -295,35 +282,28 @@ footer > p {
         font-size: 7px;
     }
 
-    h1 {font-size: 4.5rem;}
-    h3 {
-        margin-top: min(5vh, 5vw);
-        font-size: 3rem;
-    }
-    h5 {
-        font-size: 2.25rem;
-        margin-bottom: 5vh;
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
+
+    .container {width: 80%;}
+    .text, a#learn-more {
+        font-size: 3.5rem;
     }
 
     .sensational {
         font-size: 3rem;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .text {
-        font-size: 3.5rem;
-        text-align: center;
-    }
-
-    #group-list ul {
-        font-size: 2.5rem;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        line-height: normal;
     }
 
     nav > a {
-        font-size: 3rem;
+        font-size: 4rem;
         margin: 1.5rem;
     }
+
+    
 
     footer a {font-size: 3rem;}
     footer p {font-size: 1.5rem;}
@@ -332,111 +312,63 @@ footer > p {
 @media only screen and (max-width: 600px){
 
     html, body {
-        font-size: 5.5px;
+        font-size: 6px;
     }
 
-    h1 {font-size: 4.5rem;}
-    h3 {
-        margin-top: min(5vh, 5vw);
-        font-size: 3rem;
-    }
-    h5 {
-        font-size: 2.25rem;
-        margin-bottom: 5vh;
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
+
+    .container {width: 90%;}
+    .text, a#learn-more {
+        font-size: 3.5rem;
     }
 
     .sensational {
         font-size: 3rem;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .text {
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    ul a, ul a:visited {
-        color: black;
-        font-size: 3rem;
-    }
-
-    
-
-    #group-list ul {
-        font-size: 2.5rem;
-    }
-
-    .container {
-        width: 80%;
-    }
-
-    iframe {
-        width: 70vw;
-        height: 70vw;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        line-height: normal;
     }
 
     nav > a {
-        font-size: 3rem;
+        font-size: 4rem;
         margin: 1.5rem;
     }
+
+    
 
     footer a {font-size: 3rem;}
     footer p {font-size: 1.5rem;}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     html, body {
         font-size: 4px;
     }
 
-    h1 {font-size: 4.5rem; }
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
 
-    h3 {
-        margin-top: min(5vh, 5vw);
-        font-size: 3rem;
+    .container {width: 90%;}
+    .text, a#learn-more {
+        font-size: 3.5rem;
     }
-
-    h5 {
-        font-size: 2.25rem;
-        margin-bottom: 5vh;
-    }
-
-    .text {
-        text-align: center;
-        font-size: 3rem;}
 
     .sensational {
         font-size: 3rem;
-        line-height: 90%;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        line-height: normal;
     }
-
-    .container {
-        width: 90%;
-    }
-
-    ul a, ul a:visited {
-        color: black;
-        font-size: 3rem;
-    }
-
-    #groups li {
-        font-size: 2.5rem;
-    }
-
-    iframe {
-        width: 80vw;
-        height: 80vw;
-    }
-
-    a {font-size: 1rem;}
 
     nav > a {
-        font-size: 3rem;
+        font-size: 4rem;
         margin: 1.5rem;
     }
+
+    
 
     footer a {font-size: 3rem;}
     footer p {font-size: 1.5rem;}
@@ -444,39 +376,29 @@ footer > p {
 
 @media only screen and (max-width: 300px){
 
-    html, body {
-        font-size: 3px;
-    }
 
-    h1 {font-size: 4.5rem;}
-    h3 {font-size: 3rem;}
-    h5 {font-size: 2.25rem;}
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
 
     .container {width: 90%;}
-    .text {
-        font-size: 3rem;
-    }
-
-    ul a, ul a:visited {
-        color: black;
-        font-size: 3rem;
-    }
-
-    iframe {
-        width: 80vw;
-        height: 80vw;
+    .text, a#learn-more {
+        font-size: 3.5rem;
     }
 
     .sensational {
         font-size: 3rem;
         padding-left: 2.5%;
         padding-right: 2.5%;
+        line-height: normal;
     }
 
     nav > a {
-        font-size: 3rem;
+        font-size: 4rem;
         margin: 1.5rem;
     }
+
+    
 
     footer a {font-size: 3rem;}
     footer p {font-size: 1.5rem;}

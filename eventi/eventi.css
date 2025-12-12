@@ -155,39 +155,28 @@ footer > p {
 
 @media only screen and (min-width: 900px){
 
-    h1 {
-        font-size: 6.5rem;
-    }
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
 
-    h3 {
-        margin-top: min(5vh, 5vw);
-        font-size: 4rem;
-    }
-
-    h5 {
-        font-size: 2.5rem;
-        margin-bottom: 5vh;
+    .container {width: 80%;}
+    .text, a#learn-more {
+        font-size: 3.5rem;
     }
 
     .sensational {
         font-size: 3rem;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .text {
-        font-size: 3.5rem;
-        text-align: justify;
-    }
-
-    .container {
-        max-width: 800px;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        line-height: normal;
     }
 
     nav > a {
-        font-size: 3rem;
+        font-size: 4rem;
         margin: 1.5rem;
     }
+
+    
 
     footer a {font-size: 3rem;}
     footer p {font-size: 1.5rem;}
@@ -195,36 +184,33 @@ footer > p {
 
 @media only screen and (max-width: 900px){
 
-
-    h1 {
-        font-size: 6rem;
+    html, body {
+        font-size: 8px;
     }
 
-    h3 {
-        margin-top: min(5vh, 5vw);
-        font-size: 4rem;
-    }
 
-    h5 {
-        font-size: 2.5rem;
-        margin-bottom: 5vh;
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
+
+    .container {width: 80%;}
+    .text, a#learn-more {
+        font-size: 3.5rem;
     }
 
     .sensational {
         font-size: 3rem;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .text {
-        font-size: 3.5rem;
-        text-align: justify;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        line-height: normal;
     }
 
     nav > a {
-        font-size: 3rem;
+        font-size: 4rem;
         margin: 1.5rem;
     }
+
+    
 
     footer a {font-size: 3rem;}
     footer p {font-size: 1.5rem;}
@@ -235,31 +221,28 @@ footer > p {
         font-size: 7px;
     }
 
-    h1 {font-size: 4.5rem;}
-    h3 {
-        margin-top: min(5vh, 5vw);
-        font-size: 3rem;
-    }
-    h5 {
-        font-size: 2.25rem;
-        margin-bottom: 5vh;
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
+
+    .container {width: 80%;}
+    .text, a#learn-more {
+        font-size: 3.5rem;
     }
 
     .sensational {
         font-size: 3rem;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .text {
-        font-size: 3.5rem;
-        text-align: center;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        line-height: normal;
     }
 
     nav > a {
-        font-size: 3rem;
+        font-size: 4rem;
         margin: 1.5rem;
     }
+
+    
 
     footer a {font-size: 3rem;}
     footer p {font-size: 1.5rem;}
@@ -268,91 +251,15 @@ footer > p {
 @media only screen and (max-width: 600px){
 
     html, body {
-        font-size: 5.5px;
+        font-size: 6px;
     }
 
-    h1 {font-size: 4.5rem;}
-    h3 {
-        margin-top: min(5vh, 5vw);
-        font-size: 3rem;
-    }
-    h5 {
-        font-size: 2.25rem;
-        margin-bottom: 5vh;
-    }
-
-    .sensational {
-        font-size: 3rem;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    .text {
-        font-size: 3.5rem;
-        text-align: center;
-    }
-
-
-    nav > a {
-        font-size: 3rem;
-        margin: 1.5rem;
-    }
-
-    footer a {font-size: 3rem;}
-    footer p {font-size: 1.5rem;}
-}
-
-@media only screen and (max-width: 400px) {
-    html, body {
-        font-size: 4px;
-    }
-
-    h1 {font-size: 4.5rem; }
-
-    h3 {
-        margin-top: min(5vh, 5vw);
-        font-size: 3rem;
-    }
-
-    h5 {
-        font-size: 2.25rem;
-        margin-bottom: 5vh;
-    }
-
-    .text {
-        text-align: center;
-        font-size: 3.5rem;}
-
-    .sensational {
-        font-size: 3rem;
-        line-height: 90%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-
-    a {font-size: 1rem;}
-
-    nav > a {
-        font-size: 3rem;
-        margin: 1.5rem;
-    }
-
-    footer a {font-size: 3rem;}
-    footer p {font-size: 1.5rem;}
-}
-
-@media only screen and (max-width: 300px){
-
-    html, body {
-        font-size: 3px;
-    }
-
-    h1 {font-size: 4.5rem;}
-    h3 {font-size: 3rem;}
-    h5 {font-size: 2.25rem;}
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
 
     .container {width: 90%;}
-    .text {
+    .text, a#learn-more {
         font-size: 3.5rem;
     }
 
@@ -360,12 +267,77 @@ footer > p {
         font-size: 3rem;
         padding-left: 2.5%;
         padding-right: 2.5%;
+        line-height: normal;
     }
 
     nav > a {
-        font-size: 3rem;
+        font-size: 4rem;
         margin: 1.5rem;
     }
+
+    
+
+    footer a {font-size: 3rem;}
+    footer p {font-size: 1.5rem;}
+}
+
+@media only screen and (max-width: 450px) {
+    html, body {
+        font-size: 4px;
+    }
+
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
+
+    .container {width: 90%;}
+    .text, a#learn-more {
+        font-size: 3.5rem;
+    }
+
+    .sensational {
+        font-size: 3rem;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        line-height: normal;
+    }
+
+    nav > a {
+        font-size: 4rem;
+        margin: 1.5rem;
+    }
+
+    
+
+    footer a {font-size: 3rem;}
+    footer p {font-size: 1.5rem;}
+}
+
+@media only screen and (max-width: 300px){
+
+
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
+
+    .container {width: 90%;}
+    .text, a#learn-more {
+        font-size: 3.5rem;
+    }
+
+    .sensational {
+        font-size: 3rem;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        line-height: normal;
+    }
+
+    nav > a {
+        font-size: 4rem;
+        margin: 1.5rem;
+    }
+
+    
 
     footer a {font-size: 3rem;}
     footer p {font-size: 1.5rem;}
