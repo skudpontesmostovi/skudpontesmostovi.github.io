@@ -18,7 +18,7 @@ main {
     position: relative;
     background-color: white;
     padding-top: min(20vw, 3cm, 30vh);
-    padding-bottom: 10vh;
+    padding-bottom: min(10vh, 10vw);
     min-height: 100vh;
     box-shadow: 0 3px 5px grey inset;
 }

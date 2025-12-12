@@ -17,8 +17,8 @@ main {
     z-index: 2;
     position: relative;
     background-color: white;
-    padding-top: 4cm;
-    padding-bottom: 10vh;
+    padding-top: min(25vw, 4cm, 30vh);
+    padding-bottom: min(5vw, 1cm, 5vh);
     box-shadow: 0 3px 5px grey inset;
 }
 
@@ -27,7 +27,7 @@ h3, h1, h5 {
     font-weight: bold;
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-bottom: 1cm;
+    padding-bottom: 0;
 }
 
 .container {
@@ -109,6 +109,9 @@ ul, li.text {
 #info-link, #info-link:visited, #info-link:hover {
     color: black;
     text-decoration: underline;
+    font-size: 100%;
+    font-family: "Cinzel", serif;
+    text-align: justify;
 }
 
 .sensational {
@@ -120,7 +123,7 @@ ul, li.text {
 }
 
 img.plakat {
-    width: 80%;
+    width: 90%;
     max-width: 500px;
     position: relative;
     left: 50%;

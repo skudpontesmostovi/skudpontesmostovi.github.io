@@ -17,8 +17,8 @@ main {
     z-index: 2;
     position: relative;
     background-color: white;
-    padding-top: 4cm;
-    padding-bottom: 10vh;
+    padding-top: min(25vw, 4cm, 30vh);
+    padding-bottom: min(10vw, 2cm, 15vh);
     box-shadow: 0 3px 5px grey inset;
 }
 
@@ -34,6 +34,42 @@ h3, h1, h5 {
     left: 50%;
     transform: translateX(-50%);
     max-width: 700px;
+}
+
+.image-frame {
+    width: 100%;
+    height: 66vw;
+    max-height: 600px;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 5vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 2000px;
+}
+
+.image-frame {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.image-frame .track {
+    display: flex;
+    position: relative;
+    transition: transform 1s ease;
+    will-change: transform;
+    height: 100%;
+}
+
+.image-frame .track img {
+    display: block;
+    width: 100%;
+    flex: 0 0 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: cover;
 }
 
 nav {
