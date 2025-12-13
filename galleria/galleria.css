@@ -310,7 +310,7 @@ footer > p {
 @media only screen and (max-width: 900px){
 
     html, body {
-        font-size: 8px;
+        font-size: 6.5px;
     }
 
 
@@ -343,7 +343,7 @@ footer > p {
 
 @media only screen and (max-width: 800px){
     html, body {
-        font-size: 7px;
+        font-size: 5.5px;
     }
 
     h1 {font-size: 8rem;}
@@ -376,7 +376,7 @@ footer > p {
 @media only screen and (max-width: 600px){
 
     html, body {
-        font-size: 6px;
+        font-size: 4px;
     }
 
     h1 {font-size: 8rem;}
@@ -406,9 +406,9 @@ footer > p {
     footer p {font-size: 1.5rem;}
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 400px) {
     html, body {
-        font-size: 4px;
+        font-size: 3px;
     }
 
     h1 {font-size: 8rem;}

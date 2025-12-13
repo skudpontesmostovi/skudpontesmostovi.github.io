@@ -223,9 +223,72 @@ footer > p {
     footer p {font-size: 1.5rem;}
 }
 
+@media only screen and (min-width: 900px){
+
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
+
+    .container {width: 80%;}
+    .text, a#learn-more {
+        font-size: 3.5rem;
+    }
+
+    .sensational {
+        font-size: 3rem;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        line-height: normal;
+    }
+
+    nav > a {
+        font-size: 4rem;
+        margin: 1.5rem;
+    }
+
+    
+
+    footer a {font-size: 3rem;}
+    footer p {font-size: 1.5rem;}
+}
+
+@media only screen and (max-width: 900px){
+
+    html, body {
+        font-size: 6.5px;
+    }
+
+
+    h1 {font-size: 8rem;}
+    h3 {font-size: 5rem;}
+    h5 {font-size: 4rem;}
+
+    .container {width: 80%;}
+    .text, a#learn-more {
+        font-size: 3.5rem;
+    }
+
+    .sensational {
+        font-size: 3rem;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        line-height: normal;
+    }
+
+    nav > a {
+        font-size: 4rem;
+        margin: 1.5rem;
+    }
+
+    
+
+    footer a {font-size: 3rem;}
+    footer p {font-size: 1.5rem;}
+}
+
 @media only screen and (max-width: 800px){
     html, body {
-        font-size: 7px;
+        font-size: 5.5px;
     }
 
     h1 {font-size: 8rem;}
@@ -258,7 +321,7 @@ footer > p {
 @media only screen and (max-width: 600px){
 
     html, body {
-        font-size: 6px;
+        font-size: 4px;
     }
 
     h1 {font-size: 8rem;}
@@ -288,9 +351,9 @@ footer > p {
     footer p {font-size: 1.5rem;}
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 400px) {
     html, body {
-        font-size: 4px;
+        font-size: 3px;
     }
 
     h1 {font-size: 8rem;}

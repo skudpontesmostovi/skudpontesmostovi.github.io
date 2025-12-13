@@ -56,19 +56,19 @@ img#landing {
 }
 
 .language:first-child {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
     font-family: "Michroma", sans-serif;
 }
 
 .language:last-child {
     font-family: "Ysabeau Infant", sans-serif;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
 .flag {
-    height: 2rem;
+    height: 0.75rem;
     border-radius: 50%;
 }
 
