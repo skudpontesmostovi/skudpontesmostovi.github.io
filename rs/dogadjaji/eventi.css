@@ -23,8 +23,8 @@ main {
 }
 
 h3, h1, h5 {
-    font-family: "Ysabeau Infant", sans-serif;
-    font-weight: bold;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
     padding-left: 10vw;
     padding-right: 10vw;
     padding-bottom: 0;
@@ -39,9 +39,9 @@ h3, h1, h5 {
 }
 
 .title {
-    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-size: 5rem;
-    font-weight: bold;
+    font-weight: 500;
     margin: 0;
     margin-top: min(1cm, 20px);
 }
@@ -67,8 +67,8 @@ nav > * {
 
 nav > a {
     color: white;
-    font-family: "Ysabeau Infant", sans-serif;
-    font-weight: bold;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
     text-decoration: none;
     font-size: 2rem;
     text-align: center;
@@ -88,8 +88,8 @@ img#logo {
 }
 
 h3, h1, h5 {
-    font-family: "Ysabeau Infant", sans-serif;
-    font-weight: bold;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -145,8 +145,8 @@ footer {
 
 footer > p {
     color: white;
-    font-family: "Ysabeau Infant", sans-serif;
-    font-weight: bold;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
     text-decoration: none;
     font-size: 1.5rem;
     text-align: center;

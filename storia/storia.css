@@ -23,7 +23,7 @@ main {
 }
 
 h3, h1, h5 {
-    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Michroma", sans-serif;
     font-weight: bold;
     margin: 0;
 }
@@ -95,7 +95,7 @@ nav > * {
 
 nav > a {
     color: white;
-    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Michroma", sans-serif;
     font-weight: bold;
     text-decoration: none;
     font-size: 2rem;
@@ -116,7 +116,7 @@ img#logo {
 }
 
 h3, h1, h5 {
-    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Michroma", sans-serif;
     font-weight: bold;
     margin: 0;
 }
@@ -152,7 +152,7 @@ footer {
 
 footer > p {
     color: white;
-    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Michroma", sans-serif;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.5rem;

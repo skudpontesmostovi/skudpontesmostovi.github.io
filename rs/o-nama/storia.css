@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #001f3e;
-    font-size: 7px;
+    font-size: 8px;
     user-select: none;
 }
 
@@ -23,8 +23,8 @@ main {
 }
 
 h3, h1, h5 {
-    font-family: "Ysabeau Infant", sans-serif;
-    font-weight: bold;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -95,8 +95,8 @@ nav > * {
 
 nav > a {
     color: white;
-    font-family: "Ysabeau Infant", sans-serif;
-    font-weight: bold;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
     text-decoration: none;
     font-size: 2rem;
     text-align: center;
@@ -116,8 +116,8 @@ img#logo {
 }
 
 h3, h1, h5 {
-    font-family: "Ysabeau Infant", sans-serif;
-    font-weight: bold;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
     margin: 0;
 }
 
@@ -152,8 +152,8 @@ footer {
 
 footer > p {
     color: white;
-    font-family: "Ysabeau Infant", sans-serif;
-    font-weight: bold;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
     text-decoration: none;
     font-size: 1.5rem;
     text-align: center;

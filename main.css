@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #001f3e;
-    font-size: 9px;
+    font-size: 7px;
     user-select: none;
 }
 
@@ -52,10 +52,16 @@ img#landing {
     border: none;
     margin-right: 30px;
     font-size: 2rem;
-    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Michroma", sans-serif;
     font-weight: bold;
     border-radius: 5px;
     box-shadow: 3px 3px 5px grey;
+}
+
+.language:last-child {
+    font-family: "Ysabeau Infant", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 .flag {
@@ -109,7 +115,7 @@ nav > * {
 
 nav > a {
     color: white;
-    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Michroma", sans-serif;
     font-weight: bold;
     text-decoration: none;
     font-size: 2rem;
@@ -130,7 +136,7 @@ img#logo {
 }
 
 h3, h1, h5 {
-    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Michroma", sans-serif;
     font-weight: bold;
     margin: 0;
 }
@@ -168,7 +174,7 @@ h3, h1, h5 {
 
 #learn-more {
     font-size: 3rem;
-    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Michroma", sans-serif;
     font-weight: bold;
     color: black;
     text-decoration: none;
@@ -203,7 +209,7 @@ footer > div {
 footer a {
     margin-left: 15px;
     color: white;
-    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Michroma", sans-serif;
     font-weight: bold;
     display: inline;
     text-decoration: none;
@@ -216,7 +222,7 @@ footer a:hover {
 
 footer > p {
     color: white;
-    font-family: "Ysabeau Infant", sans-serif;
+    font-family: "Michroma", sans-serif;
     font-weight: bold;
     text-decoration: none;
     font-size: 1.5rem;
