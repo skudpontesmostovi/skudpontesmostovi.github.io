@@ -328,9 +328,9 @@ footer > p {
     h3 {font-size: 5rem;}
     h5 {font-size: 4rem;}
 
-    .container {width: 90%;}
     .text, a#learn-more {
         font-size: 3.5rem;
+        text-align: center;
     }
 
     .sensational {
@@ -360,9 +360,9 @@ footer > p {
     h3 {font-size: 5rem;}
     h5 {font-size: 4rem;}
 
-    .container {width: 90%;}
     .text, a#learn-more {
         font-size: 3.5rem;
+        text-align: center;
     }
 
     .sensational {
@@ -393,6 +393,7 @@ footer > p {
     .container {width: 90%;}
     .text, a#learn-more {
         font-size: 3.5rem;
+        text-align: center;
     }
 
     .sensational {
