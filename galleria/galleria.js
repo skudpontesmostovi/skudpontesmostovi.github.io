@@ -1,5 +1,5 @@
-let totalPhotos = {"sorrento":11, "trebinje":9, "budapest":11, "leobersdorf":10, "smotra2025":8, "smotra2019":9, "etnovecera":6};
-let albums = ["sorrento", "trebinje", "budapest", "leobersdorf", "smotra2025", "smotra2019", "etnovecera"];
+let totalPhotos = {"sorrento":11, "leobersdorf":10, "gradiste":10, "budapest":11, "trebinje":9, "smotra2025":8, "smotra2019":9, "etnovecera":6};
+let albums = ["sorrento", "leobersdorf", "gradiste", "budapest", "trebinje", "smotra2025", "smotra2019", "etnovecera"];
 let blockImageClick = false;
 
 window.onload = function() {
@@ -29,15 +29,17 @@ window.onload = function() {
     $("#next").on("click", nextImage);
 
     $("#load-more-trips").on("click", function(){
+        loadAlbum("gradiste");
         loadAlbum("budapest");
-        loadAlbum("leobersdorf");
+        loadAlbum("trebinje");
         $("#load-more-trips").css("display","none");
         $("#load-less-trips").css("display","");
     });
 
     $("#load-less-trips").on("click", function(){
+        unloadAlbum("gradiste");
         unloadAlbum("budapest");
-        unloadAlbum("leobersdorf");
+        unloadAlbum("trebinje");
         $("#load-more-trips").css("display","");
         $("#load-less-trips").css("display","none");
     });
@@ -54,8 +56,8 @@ window.onload = function() {
         $("#load-less-events").css("display","none");
     })
 
-    loadAlbum("trebinje");
     loadAlbum("sorrento");
+    loadAlbum("leobersdorf");
     
     loadAlbum("smotra2025");
     loadAlbum("smotra2019");

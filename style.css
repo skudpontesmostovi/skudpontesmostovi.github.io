@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #001f3e;
+    font-size: 10px;
+    /*user-select: none;*/
+}
+
+
+main {
+    z-index: 2;
+    position: relative;
+    background-color: white;
+    padding-top: min(17vw, 3cm, 30vh);
+    padding-bottom: 5vh;
+    box-shadow: 0 3px 5px grey inset;
+}
+
+.container {
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 700px;
+}
+
+nav {
+    width: 100%;
+    height: min(15vw, 2.5cm, 25vh);
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 3;
+    opacity: 1;
+    background-color: #001f3e;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+}
+
+nav > * {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav > a {
+    color: white;
+    font-family: "Science Gothic", sans-serif;
+    text-decoration: none;
+    font-size: 2.5rem;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+img#logo {
+    height: 60%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+}
+
+h3, h1, h5 {
+    font-family: "Science Gothic", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3 {font-size: 2.5rem;}
+h1 {font-size: 5rem;}
+h5 {font-size: 2rem;}
+
+.title {
+    font-family: "Science Gothic", sans-serif;
+    font-size: 2.5rem;
+}
+
+.text {
+    font-size: 2.5rem;
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    text-align: justify;
+    text-justify:newspaper;
+    text-transform: uppercase;
+    line-height: 3.5rem;
+    margin-top: min(5vh, 5vw);
+    margin-bottom: min(5vh, 5vw);
+}
+
+.number {
+    font-family: "Cinzel", serif;
+}
+
+.sensational {
+    font-size: 2.5rem;
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 20px 0px 20px 0px;
+}
+
+footer {
+    background-color: rgb(65, 65, 65);
+    width: 100%;
+    height: fit-content;
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer > div {
+    display: block;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer > p {
+    color: white;
+    font-family: "Science Gothic", sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1024px){
+    html, body {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    html, body {
+        font-size: 6px;
+    }
+    
+}
+
+@media only screen and (max-width: 480px){
+    html, body {
+        font-size: 5px;
+    }
+    .container {width: 90%;}
+    .text {text-align: center;}
+}
+
+@media only screen and (max-width: 320px){
+    html, body {font-size: 4px;}
+    .container {width: 90%;}
+    .text {text-align: center;}
+}

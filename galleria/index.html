@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galleria - SKUD Pontes-Mostovi</title>
     <link rel="icon" type="image/png" href="../images/logo-bianco.png"/>
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="galleria.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,7 +15,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Michroma&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div style="display:none;" id="loader">loading</div>
@@ -45,17 +46,21 @@
             <p class="title" align="center">Sorrento, Napoli, Capri - Giugno 2025</p>    
             <div id="sorrento" class="gallery-flex"></div>
         </div>
-        <div id="container-trebinje" class="hidden">
-            <p class="title" align="center">Trebinje - Marzo 2023</p> 
-            <div id="trebinje" class="gallery-flex"></div>
+        <div id="container-leobersdorf" class="hidden">
+            <p class="title" align="center">Leobersdorf - Dicembre 2024</p> 
+            <div id="leobersdorf" class="gallery-flex"></div>
+        </div>
+        <div id="container-gradiste" class="hidden">
+            <p class="title" align="center">Veliko Gradište - Giugno 2024</p> 
+            <div id="gradiste" class="gallery-flex"></div>
         </div>
         <div id="container-budapest" class="hidden">
-            <p class="title" align="center">Budapest - Giugno 2024</p>
+            <p class="title" align="center">Budapest - Giugno 2023</p>
             <div id="budapest" class="gallery-flex"></div>
         </div>
-        <div id="container-leobersdorf" class="hidden">
-            <p class="title" align="center">Leobersdorf - Dicembre 2024</p>
-            <div id="leobersdorf" class="gallery-flex"></div>
+        <div id="container-trebinje" class="hidden">
+            <p class="title" align="center">Trebinje - Marzo 2023</p>
+            <div id="trebinje" class="gallery-flex"></div>
         </div>
 
         <p id="load-more-trips" class="title load-more" style="text-align:center;margin-top:1cm;">Mostra di più</p>
@@ -91,7 +96,7 @@
 
     </main>
     <footer>
-        <p>&copy; SKUD Pontes-Mostovi 2025</p>
+        <p>&copy; SKUD Pontes-Mostovi <script>document.write(new Date().getFullYear());</script></p>
     </footer>
     
 </body>
