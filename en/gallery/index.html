@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - SKUD Pontes-Mostovi</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/galleria/galleria.css">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/favicon.ico">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/galleria/galleria.js"></script>
+
+    <!--Google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div style="display:none;" id="loader">loading</div>
+
+    <nav id="navigation-bar">
+        <a href="/en/about-us/">About us</a>
+        <a href="/en/events/">Events</a>
+        <a href="/en/"><img id="logo" draggable="false" src="/images/logo-bianco.png"></a>
+        <a href="/en/info/">  Info</a>
+        <a href=".">Gallery</a>
+    </nav>
+
+    <div id="image-displayer">
+        <div id="image-frame">
+            <img id="image" src="" alt="">
+            <div class="nav" id="prev">&lsaquo;</div>
+            <div class="nav" id="next">&rsaquo;</div>
+        </div>
+        <div id="quit">&times;</div>
+    </div>
+
+    <main>
+        <h1 align="center" style="margin-bottom:1cm;">Gallery</h1>
+
+        <!---------------------TRIPS------------------------------>
+        <p class="title" style="text-align:center;">TRIPS</p>
+        <div id="container-sorrento" class="hidden">
+            <p class="title" align="center">Sorrento, Naples, Capri - June 2025</p>    
+            <div id="sorrento" class="gallery-flex"></div>
+        </div>
+        <div id="container-leobersdorf" class="hidden">
+            <p class="title" align="center">Leobersdorf - December 2025</p> 
+            <div id="leobersdorf" class="gallery-flex"></div>
+        </div>
+        <div id="container-gradiste" class="hidden">
+            <p class="title" align="center">Veliko Gradište - June 2024</p> 
+            <div id="gradiste" class="gallery-flex"></div>
+        </div>
+        <div id="container-budapest" class="hidden">
+            <p class="title" align="center">Budapest - June 2023</p>
+            <div id="budapest" class="gallery-flex"></div>
+        </div>
+        <div id="container-trebinje" class="hidden">
+            <p class="title" align="center">Trebinje - March 2023</p>
+            <div id="trebinje" class="gallery-flex"></div>
+        </div>
+
+        <p id="load-more-trips" class="title load-more" style="text-align:center;margin-top:1cm;">Load more</p>
+        <p id="load-less-trips" class="title load-less" style="text-align:center;margin-top:1cm;display:none;">Show less</p>
+        
+        <br>
+
+        <!---------------------EVENTS-------------------------->
+        <p class="title" style="text-align:center;margin-top:1cm;">OTHER EVENTS</p>
+        <div id="container-smotra2025" class="hidden">
+            <p class="title" align="center">Italian festival of Serbian Folklore - Trieste, 2025</p>    
+            <div id="smotra2025" class="gallery-flex"></div>
+        </div>
+        <div id="container-smotra2019" class="hidden">
+            <p class="title" align="center">European festival of Serbian Folklore - Belgrade, 2019</p> 
+            <div id="smotra2019" class="gallery-flex"></div>
+        </div>
+        <div id="container-etnovecera" class="hidden">
+            <p class="title" align="center">Ethno dinner - February 2024</p>
+            <div id="etnovecera" class="gallery-flex"></div>
+        </div>
+
+        <p id="load-more-events" class="title load-more" style="text-align:center;margin-top:1cm;">Load more</p>
+        <p id="load-less-events" class="title load-less" style="text-align:center;margin-top:1cm;display:none;">Show less</p>
+        
+        <div class="container">
+            <p class="text">All of the pictures belong to the Association.</p>
+            <br>
+            <p class="text">All of the people portayed on the in the pictures are members of the Association and have given written permission to use their pictures for promotional purposes.</p>
+            <br>
+            <p class="text">A big thank you goes to <a href="https://www.facebook.com/profile.php?id=100084079420434" target="_blank">Željko Jovanović</a>, for his ability to always capture every moment in the best way possible, and for always supporting the Association.</p>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; SKUD Pontes-Mostovi <script>document.write(new Date().getFullYear());</script></p>
+    </footer>
+    
+</body>
+</html>
