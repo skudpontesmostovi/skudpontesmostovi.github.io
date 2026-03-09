@@ -34,29 +34,6 @@ nav {
 
     
 }
-/*
-
-display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
-#nav-left {
-  justify-self: start;
-}
-
-#nav-right {
-  justify-self: end;
-}
-
-.logo {
-  justify-self: center;
-}
-
-#logo {
-  height: 80%;
-  width: auto;
-  display: block;
-}*/
-
 
 main {
     padding-top: 0;
@@ -80,12 +57,9 @@ main {
     box-shadow: 3px 3px 5px grey;
 }
 
-.language:last-child {
-    font-family: "Science Gothic", sans-serif;
-}
-
 .flag {
     height: 2rem;
+    width: 2rem;
     border-radius: 50%;
 }
 
@@ -166,4 +140,10 @@ main {
 
 .image-frame .nav:focus {
     outline: 2px solid rgba(255,255,255,0.8);
+}
+
+@media only screen and (max-width: 750px) {
+    #language-box {
+        justify-content: center; 
+    }
 }
