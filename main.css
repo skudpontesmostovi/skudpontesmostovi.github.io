@@ -31,7 +31,32 @@ nav {
     padding-left: auto;
     padding-right: auto;
     text-align: center;
+
+    
 }
+/*
+
+display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+#nav-left {
+  justify-self: start;
+}
+
+#nav-right {
+  justify-self: end;
+}
+
+.logo {
+  justify-self: center;
+}
+
+#logo {
+  height: 80%;
+  width: auto;
+  display: block;
+}*/
+
 
 main {
     padding-top: 0;
