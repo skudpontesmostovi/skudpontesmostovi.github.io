@@ -25,43 +25,45 @@ main {
 }
 
 nav {
-    width: 100%;
-    height: min(15vw, 2.5cm, 25vh);
     position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: min(15vw, 2.5cm, 25vh);
     top: 0;
     overflow: hidden;
     z-index: 3;
     opacity: 1;
     background-color: #001f3e;
-    padding-left: auto;
-    padding-right: auto;
+    width: 100%;
+}
+
+nav>a {
+    width: min(18vw, 3.5cm, 30vh);
+    flex-shrink: 0;
     text-align: center;
-}
-
-nav > * {
-    display: inline;
-    margin-left: 15px;
-}
-
-nav > a {
+    line-height: 100%;
+    height: auto;
+    vertical-align: middle;
     color: white;
     font-family: "Science Gothic", sans-serif;
     text-decoration: none;
     font-size: 2.5rem;
-    text-align: center;
-    vertical-align: bottom;
 }
 
 nav > a:hover {
     text-decoration: underline;
 }
 
-img#logo {
-    height: 60%;
+#logo {
+    height: 100%;
+}
+
+#logo>img {
+    height: 70%;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    user-select: none;
 }
 
 h3, h1, h5 {
