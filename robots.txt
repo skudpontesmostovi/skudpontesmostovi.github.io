@@ -47,3 +47,4 @@ Disallow: /images/logo-bianco.png
 Disallow: /images/naslovna-krajiste-compressa.jpg
 Disallow: /images/bor.jpg
 Disallow: /images/icons/
+Disallow: /images/posters/

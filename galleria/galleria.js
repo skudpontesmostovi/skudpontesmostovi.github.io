@@ -1,5 +1,5 @@
-let totalPhotos = {"sorrento":11, "leobersdorf":10, "gradiste":10, "budapest":11, "trebinje":9, "smotra2025":8, "smotra2019":9, "etnovecera":6};
-let albums = ["sorrento", "leobersdorf", "gradiste", "budapest", "trebinje", "smotra2025", "smotra2019", "etnovecera"];
+let totalPhotos = {"sorrento":11, "leobersdorf":10, "gradiste":10, "budapest":11, "trebinje":9, "smotra2025":8, "smotra2019":9, "etnovecera":6, "posters":8};
+let albums = ["sorrento", "leobersdorf", "gradiste", "budapest", "trebinje", "smotra2025", "smotra2019", "etnovecera", "posters"];
 let blockImageClick = false;
 
 window.onload = function() {
@@ -61,6 +61,8 @@ window.onload = function() {
     
     loadAlbum("smotra2025");
     loadAlbum("smotra2019");
+
+    loadAlbum("posters");
 
 }
 
