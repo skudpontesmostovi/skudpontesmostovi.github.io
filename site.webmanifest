@@ -1,0 +1,11 @@
+{
+  "short_name": "",
+  "name": "",
+  "icons": [{
+    "src": "icon.png",
+    "type": "image/png",
+    "sizes": "48x48"
+  }],
+  "background_color": "#001f3e",
+  "theme_color": "#001f3e"
+}
