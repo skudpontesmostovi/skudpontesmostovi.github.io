@@ -1,5 +1,5 @@
 let max_albums_loaded = 2;
-let albums_loaded = 0
+let albums_loaded = 0;
 
 let blockImageClick = false;
 
@@ -127,6 +127,31 @@ window.onload = function() {
     // setting up navigation
     $("#prev").on("click", prevImage);
     $("#next").on("click", nextImage);
+
+    let startX = null;
+
+    const el = document.getElementById("image-displayer");
+
+    el.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+    });
+
+    el.addEventListener("touchend", (e) => {
+        if (startX === null) return;
+
+        let endX = e.changedTouches[0].clientX;
+        let diff = endX - startX;
+
+        if (Math.abs(diff) > 50) {
+            if (diff > 0) {
+                nextImage();
+            } else {
+                prevImage();
+            }
+        }
+
+        startX = null;
+    });
     // to add swipe gesture: https://stackoverflow.com/questions/62823062/adding-a-simple-left-right-swipe-gesture
 
     loadSections();
