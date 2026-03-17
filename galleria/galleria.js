@@ -28,13 +28,14 @@ let descriptions = {
 };
 
 let albums = {
-    trips: ["sorrento", "leobersdorf", "gradiste", "budapest", "trebinje"],
+    trips: ["brcko", "sorrento", "leobersdorf", "gradiste", "budapest", "trebinje"],
     events: ["smotra2025", "smotra2019", "etnovecera"],
     posters: ["posters"]
 };
 
 let album_descriptions = {
     sizes: {
+        brcko: 11,
         sorrento: 11,
         leobersdorf: 10,
         gradiste: 10,
@@ -46,6 +47,11 @@ let album_descriptions = {
         posters: 8
     },
     trips: {
+        brcko: {
+            it: "Brčko - Marzo 2026",
+            rs: "Брчко - Март 2026",
+            en: "Brčko - March 2026"
+        },
         sorrento: {
             it: "Sorrento, Napoli, Capri - Giugno 2025",
             rs: "Соренто, Напуљ, Капри - Јун 2025",
@@ -143,9 +149,9 @@ window.onload = function() {
         let diff = endX - startX;
 
         if (Math.abs(diff) > 50) {
-            if (diff > 0) {
+            if (diff < 0) {
                 nextImage();
-            } else {
+            } else if (diff > 0) {
                 prevImage();
             }
         }
@@ -316,6 +322,7 @@ function loadSections() {
 
 function add_load_trips_event() {
     $("#load-more-trips").on("click", function(){
+        loadAlbum("leobersdorf");
         loadAlbum("gradiste");
         loadAlbum("budapest");
         loadAlbum("trebinje");
@@ -324,6 +331,7 @@ function add_load_trips_event() {
     });
 
     $("#load-less-trips").on("click", function(){
+        unloadAlbum("leobersdorf");
         unloadAlbum("gradiste");
         unloadAlbum("budapest");
         unloadAlbum("trebinje");

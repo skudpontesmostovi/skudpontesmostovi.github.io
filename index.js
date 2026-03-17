@@ -1,111 +1,44 @@
-window.onload = function () {
-	$("#loader").css("display", "none");
-	$("#landing").attr("src", "/images/naslovna-krajiste.jpg")
-	resize_page();
-	slider();
-	
-}
-
-window.onresize = function () {
-	resize_page();
-}
-
-window.onscroll = function () {
-	let landingheight = $("#landing").height();
-	let navheight = $("nav").height()
-
-	if ($(window).scrollTop() < landingheight - navheight) {
-		$("#landing").css("opacity", 1 - $(window).scrollTop() / (landingheight - navheight));
-		$("nav").css("background-color", "transparent");
-
-		$("#landing").css("top", `-${$(window).scrollTop() / 2}px`)
-	} else {
-		$("nav").css("background-color", "#001f3e");
+let texts = {
+	it: {
+		title: "Associazione Culturale Serba",
+		name: "Pontes-Mostovi",
+		location: "Trieste, Italia"
+	},
+	rs: {
+		title: "",
+		name: "",
+		location: ""
+	},
+	en: {
+		title: "",
+		name: "",
+		location: ""
 	}
 }
 
-function resize_page() {
-	$("main").css("margin-top", `${$("#landing-container").height()}px`);
-
+let language_box_links = {
+	it: {hreflang: "it", href: "/", text: "ITALIANO", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/330px-Flag_of_Italy.svg.png"},
+	rs: {hreflang: "sr", href: "/rs", text: "СРПСКИ", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/330px-Flag_of_Serbia.svg.png"},
+	en: {hreflang: "en", href: "/en", text: "ENGLISH", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/330px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"}
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-
-	const elements = document.querySelectorAll(".reveal");
-
-	const observer = new IntersectionObserver((entries, observer) => {
-		entries.forEach(entry => {
-			if (entry.isIntersecting) {
-
-				const el = entry.target;
-
-				// Se è già stato rivelato, non rifare la transizione
-				if (!el.dataset.revealed) {
-					el.classList.add("visible");
-					el.dataset.revealed = "true";   // salviamo lo stato
-				}
-
-				observer.unobserve(el);  // non osserviamo più l’elemento
-			}
+function languageBox() {
+	let language_box = $("#language-box")
+	language_box_links.forEach(function(el){
+		let flag = $("<img>", {
+			class: "flag",
+			src: el.src
 		});
-	}, {
-		threshold: 0.1
+		let button = $("<a>", {
+			class: "language",
+			rel: "alternate",
+			hreflang: el.hreflang,
+			href: el.href,
+			text: el.text
+		});
+
+		button.append(flag)
+		language_box.append(button)
 	});
 
-	elements.forEach(el => observer.observe(el));
-
-});
-
-function slider() {
-	const frame = document.getElementById('image-frame-1');
-	const track = frame.querySelector('.track');
-	const slides = Array.from(track.children);
-	const btnNext = frame.querySelector('.next');
-	const btnPrev = frame.querySelector('.prev');
-	const AUTO_MS = 5000; // 5 secondi
-
-	let index = 0;
-	let timer = null;
-
-	function goTo(i) {
-		index = (i + slides.length) % slides.length;
-		track.style.transform = `translateX(-${index * 100}%)`;
-	}
-
-	function next() { goTo(index + 1); }
-	function prev() { goTo(index - 1); }
-
-	function startTimer() {
-		stopTimer();
-		timer = setInterval(next, AUTO_MS);
-	}
-
-	function stopTimer() {
-		if (timer) {
-			clearInterval(timer);
-			timer = null;
-		}
-	}
-
-	function resetTimer() {
-		startTimer();
-	}
-
-	// eventi click
-	btnNext.addEventListener('click', function () { next(); resetTimer(); });
-	btnPrev.addEventListener('click', function () { prev(); resetTimer(); });
-
-	// opzionale: pausa mentre il mouse è sopra (migliore UX)
-	frame.addEventListener('mouseenter', stopTimer);
-	frame.addEventListener('mouseleave', startTimer);
-
-	// avvia autoplay
-	goTo(0);
-	startTimer();
-
-	// per accessibilità: tasti freccia sin/ des
-	document.addEventListener('keydown', function (e) {
-		if (e.key === 'ArrowLeft') { prev(); resetTimer(); }
-		if (e.key === 'ArrowRight') { next(); resetTimer(); }
-	});
-};
+}
