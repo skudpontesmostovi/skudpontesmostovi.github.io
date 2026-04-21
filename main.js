@@ -3,7 +3,6 @@ window.onload = function () {
 	$("#landing").attr("src", "/images/naslovna-krajiste.jpg")
 	resize_page();
 	slider();
-	
 }
 
 window.onresize = function () {

@@ -16,14 +16,22 @@ let texts = {
 	}
 }
 
-let language_box_links = {
-	it: {hreflang: "it", href: "/", text: "ITALIANO", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/330px-Flag_of_Italy.svg.png"},
-	rs: {hreflang: "sr", href: "/rs", text: "СРПСКИ", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/330px-Flag_of_Serbia.svg.png"},
-	en: {hreflang: "en", href: "/en", text: "ENGLISH", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/330px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"}
+let language_box_links = [
+	{hreflang: "it", href: "/", text: "ITALIANO", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/330px-Flag_of_Italy.svg.png"},
+	{hreflang: "sr", href: "/rs", text: "СРПСКИ", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/330px-Flag_of_Serbia.svg.png"},
+	{hreflang: "en", href: "/en", text: "ENGLISH", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/330px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"}
+]
+
+window.onload = function() {
+	languageBox();
 }
 
 function languageBox() {
-	let language_box = $("#language-box")
+	let language_box = $("#language-box");
+	language_box.append()
+
+
+	return;
 	language_box_links.forEach(function(el){
 		let flag = $("<img>", {
 			class: "flag",

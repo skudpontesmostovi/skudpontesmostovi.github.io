@@ -284,8 +284,7 @@ function loadSections() {
     add_load_events_event();
     albums_container.append($("<br>"));
 
-
-    // POSTERS SECTION
+    /*/ POSTERS SECTION
     let posters_header = $("<p>", {
         class: "title",
         style: "text-align:center;text-transform:uppercase;",
@@ -317,24 +316,22 @@ function loadSections() {
 
         loadAlbum(album);
     });
-    // containers all added to the DOM
+    // containers all added to the DOM*/
 }
 
 function add_load_trips_event() {
     $("#load-more-trips").on("click", function(){
-        loadAlbum("leobersdorf");
-        loadAlbum("gradiste");
-        loadAlbum("budapest");
-        loadAlbum("trebinje");
+        for (let i = max_albums_loaded; i < albums.trips.length; i++){
+            loadAlbum(albums.trips[i]);
+        }
         $("#load-more-trips").css("display","none");
         $("#load-less-trips").css("display","");
     });
 
     $("#load-less-trips").on("click", function(){
-        unloadAlbum("leobersdorf");
-        unloadAlbum("gradiste");
-        unloadAlbum("budapest");
-        unloadAlbum("trebinje");
+        for (let i = max_albums_loaded; i < albums.trips.length; i++){
+            unloadAlbum(albums.trips[i]);
+        }
         $("#load-more-trips").css("display","");
         $("#load-less-trips").css("display","none");
     });
@@ -342,25 +339,20 @@ function add_load_trips_event() {
 
 function add_load_events_event() {
     $("#load-more-events").on("click", function(){
-        loadAlbum("etnovecera");
+        for (let i = max_albums_loaded; i < albums.events.length; i++){
+            loadAlbum(albums.events[i]);
+        }
         $("#load-more-events").css("display","none");
         $("#load-less-events").css("display","");
     });
 
     $("#load-less-events").on("click", function(){
-        unloadAlbum("etnovecera");
+        for (let i = max_albums_loaded; i < albums.events.length; i++){
+            unloadAlbum(albums.events[i]);
+        }
         $("#load-more-events").css("display","");
         $("#load-less-events").css("display","none");
     });
-}
-
-async function fileExists(url) {
-    try {
-        let res = await fetch(url, { method: "HEAD" });
-        return res.ok; // true se status 200, false altrimenti
-    } catch (err) {
-        return false; // errore = file non trovato
-    }
 }
 
 function loadAlbum(album) {
