@@ -29,7 +29,7 @@ let descriptions = {
 
 let albums = {
     trips: ["brcko", "sorrento", "leobersdorf", "gradiste", "budapest", "trebinje"],
-    events: ["smotra2025", "smotra2019", "etnovecera"],
+    events: ["smotra2026", "smotra2025", "smotra2019", "etnovecera"],
     posters: ["posters"]
 };
 
@@ -41,6 +41,7 @@ let album_descriptions = {
         gradiste: 10,
         budapest: 11,
         trebinje: 9,
+        smotra2026: 11,
         smotra2025: 8,
         smotra2019: 9,
         etnovecera: 6,
@@ -79,6 +80,11 @@ let album_descriptions = {
         }
     },
     events: {
+        smotra2026: {
+            it: "Festival del folklore Serbo in Italia - Vicenza, 2026",
+            rs: "Смотра Српског Фолклора у Италији - Вићенца, 2026",
+            en: "Italian festival of Serbian Folklore - Vicenza, 2026"
+        },
         smotra2025: {
             it: "Festival del folklore Serbo in Italia - Trieste, 2025",
             rs: "Смотра Српског Фолклора у Италији - Трст, 2025",
@@ -105,7 +111,7 @@ let album_descriptions = {
 
 window.onload = function() {
 
-    // preevnting image-display frame collapse when navigating
+    // preventing image-display frame collapse when navigating
     // through photos (left, right)
     $(".nav").on("click", function(){
         blockImageClick = true;
