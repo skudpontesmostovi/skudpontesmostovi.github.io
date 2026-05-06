@@ -1,0 +1,65 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+#seat-container {
+    height: 100%;
+    width: 100%;
+    max-width: 384px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+}
+
+#row-seat-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#top-seat-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+
+#left-seat-container, #right-seat-container {
+    height: 500px;
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px;
+}
+
+#right-seat-container {
+    position: relative;
+    transform: translateX(-10px);
+}
+
+.seat {
+    width: 60px;
+    height: 80px;
+}
+
+#top-seat-container > .seat {
+    border: 1px solid black;
+    display: inline;
+    margin: 5px;
+    padding: 1px;
+    flex: 0 0 auto;
+}
+
+#left-seat-container > .seat, #right-seat-container > .seat {
+    margin: 4px;
+    border: 1px solid black;
+    max-height: 90px;
+    padding: 0;
+}
+
+.seat-id {
+    left: 3px;
+    top: 1px;
+    position: relative;
+    margin-top: 0;
+}
