@@ -10,6 +10,8 @@ body {
 
 hr {
     border-width: 2px;
+    padding: 0;
+    margin: 0;
     color: black;
     background: black;
 }
@@ -70,15 +72,15 @@ hr {
 #pice {
     display: grid;
     grid-template-columns: auto auto auto;
-    padding: 10px;
+    padding: 5px;
 }
 
 .container div {
     text-align: center;
     margin: 10px;
     border: 1px solid black;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 #hrana {
