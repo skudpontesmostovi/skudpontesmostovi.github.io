@@ -157,3 +157,19 @@ pomfrit
 #pomfrit {
     background-color: #fcec03;
 }
+
+
+@media only screen and (min-width: 750px) {
+    #total {
+        font-size: 3em;
+    }
+
+    .container div {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .item {
+        font-size: 1.5em;
+    }
+}
