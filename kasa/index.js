@@ -226,7 +226,7 @@ function update_prices(){
 
     let spricercarafa = document.getElementById("item-spricercarafa");
     if (spricercarafa != null) {
-        spricercarafa.innerText = `Špricer caraffa: ${quantities.spricercarafa}.    Ukupno: ${quantities.spricercarafa * prices.spricercarafa} €`;
+        spricercarafa.innerText = `Špricer Bokal: ${quantities.spricercarafa}.    Ukupno: ${quantities.spricercarafa * prices.spricercarafa} €`;
     }
 
 
