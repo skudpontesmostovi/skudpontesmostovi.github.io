@@ -1,5 +1,5 @@
-let quantities = {voda:0, sok:0, pivo:0, vino:0, spricer:0, spricercarafa:0, rakija:0, jeger:0, kafa:0, riba:0, pasulj:0, pomfrit:0};
-let prices = {voda:1.5, sok:3, pivo:3, vino:2, spricer:2, spricercarafa:10, rakija:2, jeger:3, kafa:1, riba:6, pasulj:5, pomfrit:3};
+let quantities = {voda:0, sok:0, pivo:0, vino:0, spricer:0, spricercarafa:0, aperol:0, rakija:0, jeger:0, kafa:0, riba:0, pasulj:0, pomfrit:0};
+let prices = {voda:1.5, sok:3, pivo:3, vino:2, spricer:3, spricercarafa:13, aperol:4, rakija:2, jeger:3, kafa:1, riba:6, pasulj:5, pomfrit:3};
 
 window.onload = function() {
     let billdiv = this.document.getElementById("bill-div");
@@ -10,7 +10,7 @@ window.onload = function() {
     // Ponisti
     this.document.getElementById("cancel").addEventListener("click", function(){
         billdiv.innerHTML = '';
-        quantities = {voda:0, sok:0, pivo:0, vino:0, spricer:0, spricercarafa:0, rakija:0, jeger:0, kafa:0, riba:0, pasulj:0, pomfrit:0};
+        quantities = {voda:0, sok:0, pivo:0, vino:0, spricer:0, spricercarafa:0, aperol:0, rakija:0, jeger:0, kafa:0, riba:0, pasulj:0, pomfrit:0};
         document.getElementById("total").innerText = `UKUPNO: 0 €`;
     });
     
@@ -140,6 +140,20 @@ window.onload = function() {
         update_prices();
     });
 
+    // Kafa
+    this.document.getElementById("aperol").addEventListener("click", function(){
+        if (quantities.aperol == 0) {
+            quantities.aperol = 1;
+            item = document.createElement("div");
+            item.setAttribute("class", "item");
+            item.setAttribute("id", "item-aperol");
+            billdiv.appendChild(item);
+        } else {
+            quantities.aperol += 1;
+        }
+        update_prices();
+    });
+
     // Riba
     this.document.getElementById("riba").addEventListener("click", function(){
         if (quantities.riba == 0) {
@@ -229,6 +243,11 @@ function update_prices(){
         spricercarafa.innerText = `Špricer Bokal: ${quantities.spricercarafa}.    Ukupno: ${quantities.spricercarafa * prices.spricercarafa} €`;
     }
 
+    let aperol = document.getElementById("item-aperol");
+    if (aperol != null) {
+        aperol.innerText = `Aperol: ${quantities.aperol}.    Ukupno: ${quantities.aperol * prices.aperol} €`;
+    }
+
 
     let riba = document.getElementById("item-riba");
     if (riba != null) {
@@ -255,6 +274,7 @@ function update_prices(){
     ukupno += quantities.vino * prices.vino;
     ukupno += quantities.spricer * prices.spricer;
     ukupno += quantities.spricercarafa * prices.spricercarafa;
+    ukupno += quantities.aperol * prices.aperol;
 
     ukupno += quantities.riba * prices.riba;
     ukupno += quantities.pasulj * prices.pasulj;
