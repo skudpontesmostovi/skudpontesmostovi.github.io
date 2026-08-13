@@ -28,13 +28,14 @@ let descriptions = {
 };
 
 let albums = {
-    trips: ["brcko", "sorrento", "leobersdorf", "gradiste", "budapest", "trebinje"],
+    trips: ["lloret", "brcko", "sorrento", "leobersdorf", "gradiste", "budapest", "trebinje"],
     events: ["smotra2026", "smotra2025", "smotra2019", "etnovecera"],
     posters: ["posters"]
 };
 
 let album_descriptions = {
     sizes: {
+        lloret: 20,
         brcko: 11,
         sorrento: 11,
         leobersdorf: 10,
@@ -48,6 +49,11 @@ let album_descriptions = {
         posters: 8
     },
     trips: {
+        lloret: {
+            it: "Lloret de Mar - Giugno 2026",
+            rs: "Љорет де Мар - Јун 2026",
+            en: "Lloret de Mar - June 2026"
+        },
         brcko: {
             it: "Brčko - Marzo 2026",
             rs: "Брчко - Март 2026",
